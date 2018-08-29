@@ -1,0 +1,2 @@
+fly
+-DCATKIN_DEVEL_PREFIX=/home/gus/ardupilot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/gus/ardupilot_ws/install -G Unix Makefiles
