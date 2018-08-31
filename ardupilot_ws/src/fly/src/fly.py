@@ -2,39 +2,106 @@
 
 import rospy
 import mavros
-from mavros_msgs.srv import SetMode, CommandBool, CommandTOL, WaypointPush
-from mavros_msgs.msg import Waypoint
+import mavros_msgs.srv
+import mavros_msgs.msg
+import std_msgs.msg
+# from mavros_msgs.msg import Waypoint, State
 
-def set_mode(**kw):
-    rospy.wait_for_service('/mavros/set_mode')
-    set_mode_aux = rospy.ServiceProxy('/mavros/set_mode', SetMode)
-    set_mode_aux(**kw)
+class FlightController:
 
-def arm_motors(args, **kw):
-    rospy.wait_for_service('mavros/cmd/arming')
-    arm_motors_aux = rospy.ServiceProxy('mavros/cmd/arming', CommandBool)
-    arm_motors_aux(args, **kw)
+    def __init__(self):
+        self.state = mavros_msgs.msg.State()
+        self.rel_alt = std_msgs.msg.Float64()
 
-def takeoff(**kw):
-    rospy.wait_for_service('mavros/cmd/takeoff')
-    takeoff_aux = rospy.ServiceProxy('mavros/cmd/takeoff', CommandTOL)
-    takeoff_aux(**kw)
+    def set_mode(self, **kw):
+        rospy.wait_for_service('/mavros/set_mode')
+        try:
+            set_mode_aux = rospy.ServiceProxy('/mavros/set_mode',
+                mavros_msgs.srv.SetMode)
+            set_mode_aux(**kw)
+        except rospy.ServiceException, e:
+           print ("service set_mode call failed: %s."%e)
 
-if __name__ == '__main__':
+    def arm_motors(self, args, **kw):
+        rospy.wait_for_service('mavros/cmd/arming')
+        try:
+            arm_motors_aux = rospy.ServiceProxy('mavros/cmd/arming',
+                mavros_msgs.srv.CommandBool)
+            is_motors_armed = arm_motors_aux(args, **kw)
+        except rospy.ServiceException, e:
+          print ("service arming call failed: %s."%e)
+
+    def takeoff(self, **kw):
+        rospy.wait_for_service('mavros/cmd/takeoff')
+        try:
+            takeoff_aux = rospy.ServiceProxy('mavros/cmd/takeoff',
+                mavros_msgs.srv.CommandTOL)
+            takeoff_aux(**kw)
+        except rospy.ServiceException, e:
+          print ("service takeoff call failed: %s."%e)
+
+    def setpoint_global(self, **kw):
+        setpoint_global_pub = rospy.Publisher('/mavros/setpoint_position/global',
+            mavros_msgs.msg.GlobalPositionTarget, queue_size=1, latch=True)
+        setpoint_global_pub.publish(**kw)
+
+    #Execute mission
+    def execute_mission(self, mission):
+        if(mission.action=='takeoff'):
+            self.takeoff(**mission.params)
+        elif(mission.action=='setpoint'):
+            self.setpoint_global(**mission.params)
+
+    ## Drone State callback
+    def state_callback(self, msg):
+        self.state = msg
+
+    ## Drone rel_alt callback
+    def rel_alt_callback(self, msg):
+        self.rel_alt = msg
+
+class action:
+    def __init__(self):
+        self.action = None
+        self.params = dict()
+
+    def __init__(self, action, **params):
+        print(action)
+        print(params)
+        self.action = action
+        self.params = params
+
+def main():
     rospy.init_node('fly')
 
-    set_mode(custom_mode='GUIDED')
-    arm_motors(True)
-    takeoff(altitude=40)
+    #Rate Hz
+    rate = rospy.Rate(200)
 
+    ardupilot = FlightController()
 
-#    rospy.wait_for_service('mavros/mission/push')
-#    waypoint_push = rospy.ServiceProxy('/mavros/mission/push', WaypointPush)
-#    waypoints = []
-#    waypoints.append(Waypoint(command=16, frame=2, x_lat=-27.603683, y_long=-48.518052, z_alt=10))
-#    print(waypoints)
-#    waypoint_push(waypoints=waypoints)
-#
-#    rospy.wait_for_service('mavros/cmd/land')
-#    land = rospy.ServiceProxy('mavros/cmd/land', CommandTOL)
-#    land(altitude=0)
+    state_sub = rospy.Subscriber('/mavros/state', mavros_msgs.msg.State,
+        ardupilot.state_callback)
+
+    rel_alt_sub = rospy.Subscriber('/mavros/global_position/rel_alt', std_msgs.msg.Float64,
+        ardupilot.rel_alt_callback)
+
+    while not ardupilot.state.mode == 'GUIDED':
+        ardupilot.set_mode(custom_mode='GUIDED')
+        rate.sleep()
+
+    while not ardupilot.state.armed:
+        ardupilot.arm_motors(True)
+        rate.sleep()
+
+    # whole_mission = [
+    #     action('takeoff', altitude=40),
+    #     action('setpoint', latitude=-27.603683, longitude=-48.518052),
+    # ]
+    #
+    # ardupilot.execute_mission(whole_mission[1])
+
+    ardupilot.setpoint_global(latitude=-27.603683, longitude=-48.518052)
+    rospy.spin()
+
+if __name__ == '__main__':
+    main()
