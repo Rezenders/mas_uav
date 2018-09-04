@@ -62,6 +62,8 @@ class FlightController:
             self.takeoff(**mission.params)
         elif(mission.action == 'setpoint'):
             self.setpoint_global(**mission.params)
+        elif(mission.action == 'home'):
+            self.set_mode(custom_mode='RTL')
 
     # Drone State callback
     def state_callback(self, msg):
@@ -85,7 +87,6 @@ class action:
         self.action = action
         self.params = params
 
-# TODO: mudar lógica, colocar um last_mission_concluded e fazer um while
 # simulating syncronous agent (just for test)
 
 
@@ -147,18 +148,15 @@ def main():
         action('takeoff', altitude=40),
         action(
             'setpoint',
-            latitude=-
-            27.603683,
-            longitude=-
-            48.518052,
+            latitude= -27.603683,
+            longitude= -48.518052,
             altitude=40),
         action(
             'setpoint',
-            latitude=-
-            27.603675,
-            longitude=-
-            48.518646,
+            latitude= -27.603675,
+            longitude= -48.518646,
             altitude=40),
+        action('home'),
     ]
 
     simulate_agent_node(ardupilot, whole_mission)
