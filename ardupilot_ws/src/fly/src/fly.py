@@ -43,6 +43,11 @@ class FlightController:
     def setpoint_global(self, **kw):
         setpoint_global_pub = rospy.Publisher('/mavros/setpoint_position/global',
             mavros_msgs.msg.GlobalPositionTarget, queue_size=1, latch=True)
+
+        header = std_msgs.msg.Header()
+        header.stamp = rospy.Time.now()
+        kw['header'] = header
+
         setpoint_global_pub.publish(**kw)
 
     #Execute mission
