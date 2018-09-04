@@ -14,7 +14,8 @@ class FlightController:
     def __init__(self):
         self.state = mavros_msgs.msg.State()
         self.rel_alt = std_msgs.msg.Float64()
-        self.global_pos = mavros_msgs.msg.GlobalPositionTarget()
+        self.global_pos = sensor_msgs.msg.NavSatFix()
+        self.home_pos = mavros_msgs.msg.HomePosition()
 
     def set_mode(self, **kw):
         rospy.wait_for_service('/mavros/set_mode')
@@ -43,6 +44,15 @@ class FlightController:
         except rospy.ServiceException as e:
             print("service takeoff call failed: %s." % e)
 
+    def land(self, **kw):
+        rospy.wait_for_service('mavros/cmd/land')
+        try:
+            land_aux = rospy.ServiceProxy('mavros/cmd/land',
+                                             mavros_msgs.srv.CommandTOL)
+            land_aux(**kw)
+        except rospy.ServiceException as e:
+            print("service land call failed: %s." % e)
+
     def setpoint_global(self, **kw):
         setpoint_global_pub = rospy.Publisher(
             '/mavros/setpoint_position/global',
@@ -64,6 +74,8 @@ class FlightController:
             self.setpoint_global(**mission.params)
         elif(mission.action == 'home'):
             self.set_mode(custom_mode='RTL')
+        elif(mission.action == 'land'):
+            self.land(**mission.params)
 
     # Drone State callback
     def state_callback(self, msg):
@@ -76,6 +88,10 @@ class FlightController:
     # Drone global_pos callback
     def global_pos_callback(self, msg):
         self.global_pos = msg
+
+    # Drone home_pos callback
+    def home_pos_callback(self, msg):
+        self.home_pos = msg
 
 
 class action:
@@ -95,20 +111,16 @@ def simulate_agent_node(ardupilot, mission):
 
     for m in mission:
         if(last_mission.action == 'takeoff'):
-            while int(
-                    ardupilot.rel_alt.data) != last_mission.params['altitude']:
+            while int(ardupilot.rel_alt.data) != last_mission.params['altitude']:
                 pass
 
         elif(last_mission.action == 'setpoint'):
-            while round(
-                ardupilot.global_pos.latitude,
-                6) != round(
-                last_mission.params['latitude'],
-                6) and round(
-                ardupilot.global_pos.longitude,
-                6) != round(
-                    last_mission.params['longitude'],
-                    6):
+            while round(ardupilot.global_pos.latitude, 6) != round(last_mission.params['latitude'], 6) \
+                and round(ardupilot.global_pos.longitude, 6) != round(last_mission.params['longitude'], 6):
+                pass
+        elif(last_mission.action == 'home'):
+            while round(ardupilot.global_pos.latitude,6) != round(ardupilot.home_pos.latitude, 6) \
+                and round(ardupilot.global_pos.longitude,6) != round(ardupilot.home_pos.longitude, 6):
                 pass
 
         ardupilot.execute_mission(m)
@@ -136,6 +148,11 @@ def main():
         sensor_msgs.msg.NavSatFix,
         ardupilot.global_pos_callback)
 
+    home_pos_sub = rospy.Subscriber(
+        '/mavros/home_position/home',
+        mavros_msgs.msg.HomePosition,
+        ardupilot.home_pos_callback)
+
     while not ardupilot.state.mode == 'GUIDED':
         ardupilot.set_mode(custom_mode='GUIDED')
         rate.sleep()
@@ -157,6 +174,7 @@ def main():
             longitude= -48.518646,
             altitude=40),
         action('home'),
+        action('land'),
     ]
 
     simulate_agent_node(ardupilot, whole_mission)
