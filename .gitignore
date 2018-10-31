@@ -1,3 +1,8 @@
+*.parm
+*.tlog
+*.tlog.raw
+*.bin
+
 # Compiled class file
 *.class
 
