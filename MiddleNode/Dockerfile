@@ -1,5 +1,4 @@
-FROM ros_ws
-# FROM rezenders/mavros:melodic
+FROM rezenders/ros_ws
 
 RUN apt-get update && apt-get install -y \
     ros-melodic-mavros \
