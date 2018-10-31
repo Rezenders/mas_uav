@@ -8,7 +8,6 @@ import sensor_msgs.msg
 import std_msgs.msg
 # from mavros_msgs.msg import Waypoint, State
 
-
 class FlightController:
 
     def __init__(self):
@@ -135,6 +134,7 @@ def main():
 
     ardupilot = FlightController()
 
+    #TODO: encapsulate all subs in FlightController class
     state_sub = rospy.Subscriber('/mavros/state', mavros_msgs.msg.State,
                                  ardupilot.state_callback)
 

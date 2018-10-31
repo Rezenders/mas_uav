@@ -1,8 +1,0 @@
-prefix=/home/gus/ardupilot_ws/devel
-
-Name: fly
-Description: Description of fly
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/gus/ardupilot_ws/devel/lib 
-Requires: 
