@@ -10,20 +10,21 @@ jason_percepts_pub = rospy.Publisher(
     queue_size=1,
     latch=False)
 
-def act(msg, ardupilot):
-    mission = Action(msg, altitude=40)
-    if(msg == 'takeoff' and int(ardupilot.rel_alt.data) == 40):
+ardupilot = FlightController()
+
+def act(msg):
+    print(msg.data)
+    mission = Action(msg.data, altitude=40)
+    if(msg.data == 'takeoff' and int(ardupilot.rel_alt.data) == 40):
         jason_percepts_pub.publish("done(takeoff)")
 
-    if(msg == 'takeoff'):
+    if(msg.data == 'takeoff'):
         ardupilot.execute_mission(mission)
 
 
 def main():
     rospy.init_node('jason_flight')
     rate = rospy.Rate(1)
-
-    ardupilot = FlightController()
 
     while not ardupilot.state.mode == 'GUIDED':
         ardupilot.set_mode(custom_mode='GUIDED')
@@ -34,9 +35,9 @@ def main():
         rate.sleep()
 
     jason_action_sub = rospy.Subscriber(
-        '/jason/action',
+        '/jason/actions',
         std_msgs.msg.String,
-        act(ardupilot))
+        act)
 
     rospy.spin()
 
