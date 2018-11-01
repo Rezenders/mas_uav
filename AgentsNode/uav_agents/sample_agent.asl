@@ -1,4 +1,4 @@
-// Agent sample_agent in project uav_agents
+// Agent sample_agent in project rosbridge_agents
 
 /* Initial beliefs and rules */
 
@@ -8,4 +8,6 @@
 
 /* Plans */
 
-+!start : true <- .print("hello world.").
++!start : true <-
+	.print("hello world.");
+	takeoff.

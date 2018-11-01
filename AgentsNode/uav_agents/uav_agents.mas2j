@@ -1,18 +1,6 @@
-/*
-    uav_agents
-    ---------------------------
-
-    Jason Project File
-
-    This file defines the initial state of the MAS
-
-    Jason 2.3-SNAPSHOT
-    October 26, 2018 - 16:56:02
-*/
-
-MAS uav_agents {
+MAS rosbridge_agents {
 
     infrastructure: Centralised
 
-    agents: sample_agent;
+    agents: sample_agent agentArchClass rosbridgeArch;
 }
