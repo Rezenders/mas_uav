@@ -13,9 +13,14 @@ Build mas_uav:middle image:
 $ docker build --tag mas_uav:middle MiddleNode/
 ```
 
+Build mas_uav:jason image:
+```bash
+$ docker build --tag mas_uav:jason AgentsNode/
+```
+
 Roscore:
 ```bash
-$ docker run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master ros:melodic roscore 
+$ docker run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --env ROS_MASTER_URI=http://master:11311 rezenders/jason-ros:melodic roslaunch rosbridge_server rosbridge_websocket.launch address:=master
 ```
 
 Allow xhost:
@@ -45,5 +50,15 @@ Note: 172.19.0.2 is the ip of the ardupilot container
 
 Container publishing to mavros:
 ```bash
-$ docker run -it --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MASTER_URI=http://master:11311 mas_uav:middle rosrun fly fly.py
+$ docker run -it --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MASTER_URI=http://master:11311 mas_uav:middle rosrun fly jason_flight.py
+```
+
+Jason container:
+
+```bash
+$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 mas_uav:jason
+```
+
+```bash
+$ jason uav_agents.mas2j
 ```
