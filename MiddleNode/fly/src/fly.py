@@ -1,22 +1,13 @@
 #!/usr/bin/env python2
 
 import rospy
-from flight_controller import FlightController
+from flight_controller import FlightController, Action
 
-class action:
-    def __init__(self):
-        self.action = None
-        self.params = dict()
 
-    def __init__(self, action, **params):
-        self.action = action
-        self.params = params
 
 # simulating syncronous agent (just for test)
-
-
 def simulate_agent_node(ardupilot, mission):
-    last_mission = action('')
+    last_mission = Action('')
 
     for m in mission:
         if(last_mission.action == 'takeoff'):
@@ -53,19 +44,19 @@ def main():
         rate.sleep()
 
     whole_mission = [
-        action('takeoff', altitude=40),
-        action(
+        Action('takeoff', altitude=40),
+        Action(
             'setpoint',
             latitude= -27.603683,
             longitude= -48.518052,
             altitude=40),
-        action(
+        Action(
             'setpoint',
             latitude= -27.603675,
             longitude= -48.518646,
             altitude=40),
-        action('home'),
-        action('land'),
+        Action('home'),
+        Action('land'),
     ]
 
     simulate_agent_node(ardupilot, whole_mission)

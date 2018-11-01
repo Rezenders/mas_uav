@@ -106,3 +106,12 @@ class FlightController:
     # Drone home_pos callback
     def home_pos_callback(self, msg):
         self.home_pos = msg
+
+class Action:
+    def __init__(self):
+        self.action = None
+        self.params = dict()
+
+    def __init__(self, action, **params):
+        self.action = action
+        self.params = params
