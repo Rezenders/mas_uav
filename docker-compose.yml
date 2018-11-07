@@ -1,0 +1,72 @@
+version: "3"
+
+services:
+    ardupilot:
+        image: rezenders/ardupilot-ubuntu
+        container_name: ardupilot
+        stdin_open: true
+        tty: true
+        networks:
+            - ros_net
+        environment:
+            - "DISPLAY"
+            - "QT_X11_NO_MITSHM=1"
+        volumes:
+            - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+        restart: on-failure        
+        command: sim_vehicle.py -v ArduCopter --console --map -L UFSC --out mavros:14551
+    
+    roscore:
+        image: rezenders/jason-ros:melodic
+        container_name: master
+        stdin_open: true
+        tty: true
+        networks:
+            - ros_net
+        restart: on-failure        
+        environment:
+            - "ROS_HOSTNAME=master"
+            - "ROS_MASTER_URI=http://master:11311"
+        command: roslaunch rosbridge_server rosbridge_websocket.launch address:=master
+
+    mavros:
+        image: rezenders/mavros:melodic
+        container_name: mavros
+        networks:
+            - ros_net
+        environment:
+            - "ROS_HOSTNAME=mavros"
+            - "ROS_MASTER_URI=http://master:11311"
+        depends_on:
+            - roscore
+        restart: on-failure        
+        command: roslaunch launch/apm.launch fcu_url:="udp://:14551@ardupilot:14555"
+
+    uav_body:
+        image: uav:body
+        container_name: uav_body
+        networks:
+            - ros_net
+        environment:
+            - "ROS_HOSTNAME=uav_body"
+            - "ROS_MASTER_URI=http://master:11311"
+        depends_on:
+            - roscore
+            - mavros
+        command: rosrun fly jason_flight.py
+
+    uav_agent:
+        image: uav:agent
+        container_name: uav_agent
+        networks:
+            - ros_net
+        environment:
+            - "ROS_HOSTNAME=uav_agent"
+            - "ROS_MASTER_URI=http://master:11311"
+        depends_on:
+            - roscore
+            - mavros
+            - uav_body
+        command: jason uav_agents.mas2j
+networks:
+    ros_net:
