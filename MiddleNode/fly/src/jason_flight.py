@@ -14,6 +14,14 @@ ardupilot = FlightController()
 
 def act(msg):
     print(msg.data)
+    while not ardupilot.state.mode == 'GUIDED':
+        ardupilot.set_mode(custom_mode='GUIDED')
+#        rate.sleep()
+
+    while not ardupilot.state.armed:
+        ardupilot.arm_motors(True)
+#        rate.sleep()
+    
     mission = Action(msg.data, altitude=40)
     if(msg.data == 'takeoff' and int(ardupilot.rel_alt.data) == 40):
         jason_percepts_pub.publish("done(takeoff)")
@@ -25,14 +33,6 @@ def act(msg):
 def main():
     rospy.init_node('jason_flight')
     rate = rospy.Rate(1)
-
-    while not ardupilot.state.mode == 'GUIDED':
-        ardupilot.set_mode(custom_mode='GUIDED')
-        rate.sleep()
-
-    while not ardupilot.state.armed:
-        ardupilot.arm_motors(True)
-        rate.sleep()
 
     jason_action_sub = rospy.Subscriber(
         '/jason/actions',
