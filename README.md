@@ -144,7 +144,7 @@ $ balena run --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MAST
 
 Jason container:
 ```bash
-$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agents_node jason uav_agents.mas2j
+$ balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agents_node jason uav_agents.mas2j
 ```
 
 ### Docker-compose
