@@ -1,3 +1,4 @@
+.balena-sync.yml
 *.parm
 *.tlog
 *.tlog.raw
