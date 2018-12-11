@@ -28,13 +28,13 @@ $ xhost +local:root # for the lazy and reckless
 
 Ardupilot container:
 ```bash
-$ docker run -it --rm --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu 
+$ docker run -it --rm --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu
 ```
 
 ```bash
-$ sim_vehicle.py -v ArduCopter --console --map -L UFSC --out 172.18.0.4:14551
+$ sim_vehicle.py -v ArduCopter --console --map -L UFSC --out mavros:14551
 ```
-Note: 172.18.0.4 is the ip of the container which will be running mavros (Still needs to be automated)
+Note: mavros is the address of the mavros container
 
 Roscore:
 ```bash
@@ -43,13 +43,13 @@ $ docker run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --e
 
 Mavros container:
 ```bash
-$ docker run -it --rm --net ros_net  --name mavros --env ROS_HOSTNAME=mavros --env ROS_MASTER_URI=http://master:11311  rezenders/mavros 
+$ docker run -it --rm --net ros_net  --name mavros --env ROS_HOSTNAME=mavros --env ROS_MASTER_URI=http://master:11311  rezenders/mavros
 ```
 
 ```bash
-$ roslaunch launch/apm.launch fcu_url:="udp://:14551@172.18.0.3:14555"
+$ roslaunch launch/apm.launch fcu_url:="udp://:14551@ardupilot:14555"
 ```
-Note: 172.18.0.3 is the ip of the ardupilot container
+Note: ardupilot is the ip of the ardupilot container
 
 Container publishing to mavros:
 ```bash
@@ -97,7 +97,7 @@ $ balena local push -s AgentsNode/ --app-name agent_node
 ```
 
 ### Running containers
-The main difference here is that ardupilot container will be executed in the host machine and that you need to ssh into the board to run each container (this will be improved in the future). 
+The main difference here is that ardupilot container will be executed in the host machine and that you need to ssh into the board to run each container (this will be improved in the future).
 
 #### In your host machine.
 
@@ -108,7 +108,7 @@ $ xhost +local:root # for the lazy and reckless
 
 Ardupilot container:
 ```bash
-$ docker run -it --rm -p 14555:14555/udp --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu 
+$ docker run -it --rm -p 14555:14555/udp --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu
 ```
 
 Note: Now we have to use ```-p 14555:14555/udp``` to bind the container 14555 port with the host 14555 port
@@ -118,7 +118,7 @@ Then:
 $ sim_vehicle.py -v ArduCopter --console --map -L UFSC --out 150.162.53.23:14551
 ```
 
-Note: 150.162.53.23 is the ip of the board which will be running the mavros container, not the container\`s ip. 
+Note: 150.162.53.23 is the ip of the board which will be running the mavros container, not the container\`s ip.
 
 #### In the board
 Roscore:
@@ -128,7 +128,7 @@ $ balena run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --e
 
 Mavros container:
 ```bash
-$ balena run -it --rm -p 14551:14551/udp --net ros_net  --name mavros --env ROS_HOSTNAME=mavros --env ROS_MASTER_URI=http://master:11311  rezenders/mavros 
+$ balena run -it --rm -p 14551:14551/udp --net ros_net  --name mavros --env ROS_HOSTNAME=mavros --env ROS_MASTER_URI=http://master:11311  rezenders/mavros
 ```
 Note: Now we have to use ```-p 14551:14551/udp``` to bind the container 14551 port with the board 14551 port
 
