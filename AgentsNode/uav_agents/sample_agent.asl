@@ -10,4 +10,6 @@
 
 +!start : true <-
 	.print("hello world.");
-	takeoff.
+	takeoff;
+	takeoff("altitude=40",40);
+	.
