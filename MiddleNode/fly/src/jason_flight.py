@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-
+import re
 import rospy
 import std_msgs.msg
 from flight_controller import FlightController, Action
@@ -12,6 +12,19 @@ jason_percepts_pub = rospy.Publisher(
 
 ardupilot = FlightController()
 
+def decompose(data):
+    predicate = re.match('[^\(]*', data).group(0)
+    arguments = re.findall('\((.*?)\)', data)[0].split(',')
+
+    args_dict = dict()
+    for args in arguments:
+        args_ = args.split('=')
+        if len(args_)>1:
+            args_dict[args_[0]] = float(args_[1]) #TODO: always float? could be boolean?
+
+    return predicate, args_dict
+
+
 def act(msg):
     print(msg.data)
     while not ardupilot.state.mode == 'GUIDED':
@@ -21,12 +34,14 @@ def act(msg):
     while not ardupilot.state.armed:
         ardupilot.arm_motors(True)
 #        rate.sleep()
-    
-    mission = Action(msg.data, altitude=40)
-    if(msg.data == 'takeoff' and int(ardupilot.rel_alt.data) == 40):
+
+    action, args = decompose(msg.data)
+    mission = Action(action, **args)
+
+    if(action == 'takeoff' and int(ardupilot.rel_alt.data) == 40):
         jason_percepts_pub.publish("done(takeoff)")
 
-    if(msg.data == 'takeoff'):
+    if(action == 'takeoff'):
         ardupilot.execute_mission(mission)
 
 
