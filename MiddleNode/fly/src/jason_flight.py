@@ -24,26 +24,22 @@ def decompose(data):
 
     return predicate, args_dict
 
-
 def act(msg):
     print(msg.data)
     while not ardupilot.state.mode == 'GUIDED':
         ardupilot.set_mode(custom_mode='GUIDED')
-#        rate.sleep()
 
     while not ardupilot.state.armed:
         ardupilot.arm_motors(True)
-#        rate.sleep()
 
     action, args = decompose(msg.data)
     mission = Action(action, **args)
 
-    if(action == 'takeoff' and int(ardupilot.rel_alt.data) == 40):
-        jason_percepts_pub.publish("done(takeoff)")
-
-    if(action == 'takeoff'):
+    if(ardupilot.executable_mission(mission)):
         ardupilot.execute_mission(mission)
-
+        while not ardupilot.mission_completed(mission):
+            pass
+        jason_percepts_pub.publish("done("+action+")")
 
 def main():
     rospy.init_node('jason_flight')
