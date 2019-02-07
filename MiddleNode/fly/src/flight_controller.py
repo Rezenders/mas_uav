@@ -8,6 +8,13 @@ import std_msgs.msg
 class FlightController:
 
     def __init__(self):
+        self. executable_missions =[
+        "takeoff",
+        "setpoint",
+        "home",
+        "land",
+        ]
+
         self.state = mavros_msgs.msg.State()
         self.rel_alt = std_msgs.msg.Float64()
         self.global_pos = sensor_msgs.msg.NavSatFix()
@@ -79,6 +86,10 @@ class FlightController:
         kw['header'] = header
 
         setpoint_global_pub.publish(**kw)
+
+    # Check if the mission is executable
+    def executable_mission(self, mission):
+        return (mission.action in self.executable_missions)
 
     # Execute mission
     def execute_mission(self, mission):
