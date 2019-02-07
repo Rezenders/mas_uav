@@ -101,6 +101,27 @@ class FlightController:
             self.set_mode(custom_mode='RTL')
         elif(mission.action == 'land'):
             self.land(**mission.params)
+        else:
+            print("There is no execution plan for this action!")
+
+    #Verify if the mission is completed
+    def mission_completed(self, mission):
+        completed = False
+        if(mission.action == 'takeoff'):
+            if int(self.rel_alt.data) == mission.params['altitude']:
+                completed = True
+        elif(mission.action == 'setpoint'):
+            if round(self.global_pos.latitude, 5) == round(mission.params['latitude'], 5) \
+                and round(self.global_pos.longitude, 5) == round(mission.params['longitude'], 5):
+                completed = True
+        elif(mission.action == 'home'):
+            if round(self.global_pos.latitude, 5) == round(self.home_pos.latitude, 5) \
+                and round(self.global_pos.longitude, 5) == round(self.home_pos.longitude, 5):
+                completed = True
+        elif(mission.action == 'land'):
+            completed = True #TODO:Fix this
+        return completed
+
 
     # Drone State callback
     def state_callback(self, msg):
