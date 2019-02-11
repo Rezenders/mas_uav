@@ -117,8 +117,8 @@ class FlightController:
                 and round(self.global_pos.longitude, 5) == round(mission.params['longitude'], 5):
                 completed = True
         elif(mission.action == 'home'):
-            if round(self.global_pos.latitude, 5) == round(self.home_pos.latitude, 5) \
-                and round(self.global_pos.longitude, 5) == round(self.home_pos.longitude, 5):
+            if round(self.global_pos.latitude, 5) == round(self.home_pos.geo.latitude, 5) \
+                and round(self.global_pos.longitude, 5) == round(self.home_pos.geo.longitude, 5):
                 completed = True
         elif(mission.action == 'land'):
             completed = True #TODO:Fix this

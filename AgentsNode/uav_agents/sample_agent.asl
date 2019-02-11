@@ -12,6 +12,7 @@
 	.print("hello world.");
 	takeoff("altitude=5");
 	setpoint("latitude= -27.603683", "longitude= -48.518052","altitude=40");
+	home;
 	land;
 	.
-		.
+	
