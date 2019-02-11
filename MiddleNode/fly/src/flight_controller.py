@@ -8,7 +8,7 @@ import std_msgs.msg
 class FlightController:
 
     def __init__(self):
-        self. executable_missions =[
+        self.executable_missions =[
         "takeoff",
         "setpoint",
         "home",
@@ -20,8 +20,10 @@ class FlightController:
         self.global_pos = sensor_msgs.msg.NavSatFix()
         self.home_pos = mavros_msgs.msg.HomePosition()
 
-        state_sub = rospy.Subscriber('/mavros/state', mavros_msgs.msg.State,
-                                     self.state_callback)
+        state_sub = rospy.Subscriber(
+            '/mavros/state',
+            mavros_msgs.msg.State,
+            self.state_callback)
 
         rel_alt_sub = rospy.Subscriber(
             '/mavros/global_position/rel_alt',
