@@ -10,17 +10,25 @@ jason_percepts_pub = rospy.Publisher(
     queue_size=1,
     latch=False)
 
+jason_actions_status_pub = rospy.Publisher(
+    '/jason/actions_status',
+    std_msgs.msg.String,
+    queue_size=1,
+    latch=False)
+
 ardupilot = FlightController()
 
 def decompose(data):
     predicate = re.match('[^\(]*', data).group(0)
-    arguments = re.findall('\((.*?)\)', data)[0].split(',')
-
     args_dict = dict()
-    for args in arguments:
-        args_ = args.split('=')
-        if len(args_)>1:
-            args_dict[args_[0]] = float(args_[1]) #TODO: always float? could be boolean?
+    try:
+        arguments = re.findall('\((.*?)\)', data)[0].split(',')
+        for args in arguments:
+            args_ = args.split('=')
+            if len(args_)>1:
+                args_dict[args_[0]] = float(args_[1]) #TODO: always float? could be boolean?
+    except IndexError:
+        pass
 
     return predicate, args_dict
 
@@ -39,9 +47,10 @@ def act(msg):
         ardupilot.execute_mission(mission)
         while not ardupilot.mission_completed(mission):
             pass
-        jason_percepts_pub.publish("done("+action+")")
+        jason_actions_status_pub.publish("done("+action+")")
 
 def main():
+    print("Starting jason_flight")
     rospy.init_node('jason_flight')
     rate = rospy.Rate(1)
 
