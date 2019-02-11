@@ -10,13 +10,8 @@
 
 +!start : true <-
 	.print("hello world.");
-	takeoff("altitude=40");
+	takeoff("altitude=5");
+	setpoint("latitude= -27.603683", "longitude= -48.518052","altitude=40");
+	land;
 	.
-
-+done(takeoff)
-	<-	!follow_trajectory
-		.
-
-+!follow_trajectory
-	<-	setpoint("latitude= -27.603683", "longitude= -48.518052","altitude=40")
 		.
