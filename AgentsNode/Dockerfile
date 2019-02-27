@@ -1,4 +1,4 @@
-FROM rezenders/jason-ros
+FROM rezenders/jason-ros:rosbridge
 
 RUN ["/bin/bash","-c","mkdir -p /uav_agents/lib && cp /java_rosbridge/target/java_rosbridge-2.0.2-jar-with-dependencies.jar /uav_agents/lib/"]
 WORKDIR /uav_agents
