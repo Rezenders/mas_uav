@@ -1,6 +1,7 @@
 # MAS-UAV
 Multi agent system to coordinate multiple UAVs
 
+[RosJava](https://github.com/Rezenders/MAS-UAV/tree/rosjava) is in a separate branch, checkout into it before using rosjava
 ## Usage
 
 ### Build images and create network
@@ -9,14 +10,21 @@ Create docker network
 $ docker network create ros_net
 ```
 
-Build mas_uav:middle image:
+Build middle_node image:
 ```bash
 $ docker build --tag middle_node MiddleNode/
 ```
 
-Build mas_uav:jason image:
+Build agent_node image:
+
+For rosbridge:
 ```bash
-$ docker build --tag agents_node AgentsNode/
+$ docker build --tag agent_node:rosbridge AgentsNode/
+```
+
+For rosjava:
+```bash
+$ docker build --tag agent_node:rosjava AgentsNode/
 ```
 
 ### Run containers
@@ -57,9 +65,17 @@ $ docker run --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MAST
 ```
 
 Jason container:
+
+For rosbridge:
 ```bash
-$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agents_node jason uav_agents.mas2j
+$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node:rosbridge jason uav_agents.mas2j
 ```
+
+For rosjava:
+```bash
+$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node:rosjava gradle
+```
+
 ## Hardware in the loop
 
 The hardware in the loop was tested using a beaglebone black but it should work with other armv7 boards.
@@ -92,8 +108,13 @@ In order to build and push the middle_node and agent_node images you need to run
 ```bash
 $ balena local push -s MiddleNode/ --app-name middle_node
 ```
+For rosbridge:
 ```bash
-$ balena local push -s AgentsNode/ --app-name agent_node
+$ balena local push -s AgentsNode/ --app-name agent_node:rosbridge
+```
+For rosjava:
+```bash
+$ balena local push -s AgentsNode/ --app-name agent_node:rosjava
 ```
 
 ### Running containers
@@ -143,8 +164,14 @@ $ balena run --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MAST
 ```
 
 Jason container:
+
+For RosBridge:
 ```bash
-$ balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agents_node jason uav_agents.mas2j
+$ balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node:rosbridge jason uav_agents.mas2j
+```
+For RosJava:
+```bash
+$ balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node:rosjava gradle
 ```
 
 ### Docker-compose
