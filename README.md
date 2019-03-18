@@ -2,6 +2,13 @@
 Multi agent system to coordinate multiple UAVs
 
 [RosJava](https://github.com/Rezenders/MAS-UAV/tree/rosjava) is in a separate branch, checkout into it before using rosjava
+
+Submodules must be updated, run:
+
+```bash
+git submodule update --init --recursive
+```
+
 ## Usage
 
 ### Build images and create network
