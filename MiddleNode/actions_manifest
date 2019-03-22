@@ -1,0 +1,42 @@
+[teste]
+comm_method = topic
+comm_name = /hw/teste
+comm_msg = String
+dependencies = std_msgs.msg
+
+[set_mode]
+comm_method = service
+comm_name = /mavros/set_mode
+comm_msg = SetMode
+dependencies = mavros_msgs.srv
+params_name = custom_mode
+
+[arm_motors]
+comm_method = service
+comm_name = mavros/cmd/arming
+comm_msg = CommandBool
+dependencies = mavros_msgs.srv
+params_name = value
+params_type = bool
+
+[takeoff]
+comm_method = service
+comm_name = /mavros/cmd/takeoff
+comm_msg = CommandTOL
+dependencies = mavros_msgs.srv
+params_name = altitude
+params_type = float
+
+[setpoint]
+comm_method = topic
+comm_name = /mavros/setpoint_position/global
+comm_msg = GlobalPositionTarget
+dependencies = mavros_msgs.msg
+params_name = latitude, longitude, altitude
+params_type = float, float, float
+
+[land]
+comm_method = service
+comm_name = /mavros/cmd/land
+comm_msg = CommandTOL
+dependencies = mavros_msgs.srv
