@@ -1,11 +1,10 @@
-FROM rezenders/jason-ros:rosbridge
 
-RUN ["/bin/bash","-c","mkdir -p /uav_agents/lib && cp /java_rosbridge/target/java_rosbridge-2.0.2-jar-with-dependencies.jar /uav_agents/lib/"]
-WORKDIR /uav_agents
+FROM jason-ros:HwBridge
 
 ## Copy Jason files
 COPY uav_agents /uav_agents
 
-COPY jason-ros/rosbridge_agents/rosbridgeArch.java /uav_agents/
+COPY jason-ros/rosjava_agents/src/java/* /uav_agents/src/java/
+WORKDIR /uav_agents/
 
 CMD ["bash"]

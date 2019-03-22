@@ -1,8 +1,8 @@
-FROM rezenders/ros_ws
+FROM jason-ros:HwBridge
 
 RUN apt-get update && apt-get install -y \
     ros-melodic-mavros \
     && rm -rf /var/lib/apt/lists/
 
-RUN catkin_create_pkg fly
-COPY fly /catkin_ws/src/fly
+COPY actions_manifest /HwBridge/
+COPY perceptions_manifest /HwBridge/
