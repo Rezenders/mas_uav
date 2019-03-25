@@ -2,6 +2,7 @@
 Multi agent system to coordinate multiple UAVs
 
 [RosJava](https://github.com/Rezenders/MAS-UAV/tree/rosjava) is in a separate branch, checkout into it before using rosjava
+
 ## Usage
 
 ### Build images and create network
@@ -17,15 +18,10 @@ $ docker build --tag middle_node MiddleNode/
 
 Build agent_node image:
 
-For rosbridge:
 ```bash
-$ docker build --tag agent_node:rosbridge AgentsNode/
+$ docker build --tag agent_node AgentsNode/
 ```
 
-For rosjava:
-```bash
-$ docker build --tag agent_node:rosjava AgentsNode/
-```
 
 ### Run containers
 
@@ -46,34 +42,27 @@ Note: mavros is the address of the mavros container
 
 Roscore:
 ```bash
-$ docker run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --env ROS_MASTER_URI=http://master:11311 rezenders/jason-ros roslaunch rosbridge_server rosbridge_websocket.launch address:=master
+$ docker run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --env ROS_MASTER_URI=http://master:11311 ros:melodic-ros-core roscore
 ```
 
 Mavros container:
 ```bash
-$ docker run -it --rm --net ros_net  --name mavros --env ROS_HOSTNAME=mavros --env ROS_MASTER_URI=http://master:11311  rezenders/mavros
-```
-
-```bash
-$ roslaunch launch/apm.launch fcu_url:="udp://:14551@ardupilot:14555"
+$ docker run -it --rm --net ros_net  --name mavros --env ROS_HOSTNAME=mavros --env ROS_MASTER_URI=http://master:11311  rezenders/mavros roslaunch launch/apm.launch fcu_url:="udp://:14551@ardupilot:14555"
 ```
 Note: ardupilot is the ip of the ardupilot container
 
 Container publishing to mavros:
 ```bash
-$ docker run --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MASTER_URI=http://master:11311 middle_node rosrun fly jason_flight.py
+$ docker run -it --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MASTER_URI=http://master:11311 middle_node ./hw_bridge.py
 ```
 
 Jason container:
 
-For rosbridge:
 ```bash
-$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node:rosbridge jason uav_agents.mas2j
+$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node 
 ```
-
-For rosjava:
 ```bash
-$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node:rosjava gradle
+$ gradle
 ```
 
 ## Hardware in the loop
