@@ -1,4 +1,4 @@
-FROM jason-ros:HwBridge
+FROM rezenders/jason-ros:HwBridge
 
 RUN apt-get update && apt-get install -y \
     ros-melodic-mavros \

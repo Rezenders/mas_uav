@@ -1,10 +1,14 @@
-
-FROM jason-ros:HwBridge
+FROM rezenders/jason-ros:HwBridge
 
 ## Copy Jason files
 COPY uav_agents /uav_agents
 
-COPY jason-ros/rosjava_agents/src/java/* /uav_agents/src/java/
+# Dev
+#COPY jason-ros/rosjava_agents/src/java/* /uav_agents/src/java/
+
+# Production
+RUN ["/bin/bash", "-c"," mkdir -p /uav_agents/src/java/ && cp /rosjava_agents/src/java/* /uav_agents/src/java/"]
+
 WORKDIR /uav_agents/
 
 CMD ["bash"]
