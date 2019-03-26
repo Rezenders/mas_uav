@@ -55,11 +55,9 @@ $ docker run -it --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_
 Jason container:
 
 ```bash
-$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node 
+$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node gradle 
 ```
-```bash
-$ gradle
-```
+
 
 ## Hardware in the loop
 
