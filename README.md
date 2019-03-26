@@ -32,11 +32,7 @@ $ xhost +local:root # for the lazy and reckless
 
 Ardupilot container:
 ```bash
-$ docker run -it --rm --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu
-```
-
-```bash
-$ sim_vehicle.py -v ArduCopter --console --map -L UFSC --out mavros:14551
+$ docker run -it --rm --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu sim_vehicle.py -v ArduCopter --console --map -L UFSC --out mavros:14551
 ```
 Note: mavros is the address of the mavros container
 
