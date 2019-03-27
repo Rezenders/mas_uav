@@ -32,11 +32,7 @@ $ xhost +local:root # for the lazy and reckless
 
 Ardupilot container:
 ```bash
-$ docker run -it --rm --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu
-```
-
-```bash
-$ sim_vehicle.py -v ArduCopter --console --map -L UFSC --out mavros:14551
+$ docker run -it --rm --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu sim_vehicle.py -v ArduCopter --console --map -L UFSC --out mavros:14551
 ```
 Note: mavros is the address of the mavros container
 
@@ -59,11 +55,9 @@ $ docker run -it --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_
 Jason container:
 
 ```bash
-$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node 
+$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node gradle 
 ```
-```bash
-$ gradle
-```
+
 
 ## Hardware in the loop
 
