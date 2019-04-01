@@ -10,13 +10,13 @@
 
 +!start : true <-
 	.print("hello world.");
-	set_mode("custom_mode=GUIDED");
-	arm_motors("value=True");
-	takeoff("altitude=5");
+	set_mode("GUIDED");
+	arm_motors(True);
+	takeoff(5);
 	.wait(10000);
-	setpoint("latitude= -27.603683", "longitude= -48.518052","altitude=40");
+	setpoint(-27.603683, -48.518052,40);
 	.wait(10000);
-	set_mode("custom_mode=RTL");
+	set_mode("RTL");
 	.wait(10000);
 	land;
 	.
