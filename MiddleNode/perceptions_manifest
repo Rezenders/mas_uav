@@ -1,0 +1,27 @@
+[state]
+name = /mavros/state
+msg_type = State
+dependencies = mavros_msgs.msg
+data = mode
+insertion = update
+
+[altitude]
+name = /mavros/global_position/rel_alt
+msg_type = Float64
+dependencies = std_msgs.msg
+data = data
+insertion = update
+
+[global_pos]
+name = /mavros/global_position/global
+msg_type = NavSatFix
+dependencies = sensor_msgs.msg
+data = latitude, longitude
+insertion = update
+
+[home_pos]
+name = /mavros/home_position/home
+msg_type = HomePosition
+dependencies = mavros_msgs.msg
+data = geo.latitude, geo.longitude
+insertion = update
