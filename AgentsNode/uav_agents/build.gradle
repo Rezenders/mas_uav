@@ -13,8 +13,8 @@ repositories {
     mavenCentral()
     jcenter()
 
+    maven { url "https://raw.github.com/jason-lang/mvn-repo/master" }
     maven { url "http://jacamo.sourceforge.net/maven2" }
-    maven { url "http://jade.tilab.com/maven/" }
     maven { url "https://raw.github.com/rosjava/rosjava_mvn_repo/master" }
 
     flatDir {
@@ -24,9 +24,8 @@ repositories {
 
 dependencies {
     compile group: 'org.jason-lang',     name: 'jason' ,   version: '2.4-SNAPSHOT'
-    compile 'org.ros.rosjava_core:rosjava:[0.3,0.4)'
-    compile 'org.ros.rosjava_messages:geometry_msgs:[1.12,1.13)'
-    compile (name:'jason_msgs', ext:'jar')
+    compile group: 'org.jason-lang',     name: 'jasonros' ,   version: '1.0'
+    compile files('lib/jason_msgs.jar')
 }
 
 sourceSets {
