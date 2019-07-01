@@ -1,4 +1,4 @@
-FROM rezenders/jason-ros:HwBridge
+FROM rezenders/jason-ros
 
 ## Copy Jason files
 COPY uav_agents /uav_agents
