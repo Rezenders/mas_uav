@@ -1,3 +1,0 @@
-[submodule "jason-ros"]
-	path = AgentsNode/jason-ros
-	url = https://github.com/Rezenders/jason-ros.git
