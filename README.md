@@ -1,13 +1,6 @@
 # MAS-UAV
 Multi agent system to coordinate multiple UAVs
 
-[RosJava](https://github.com/Rezenders/MAS-UAV/tree/rosjava) is in a separate branch, checkout into it before using rosjava
-
-Submodules must be updated, run:
-
-```bash
-git submodule update --init --recursive
-```
 ## Usage
 
 ### Build images and create network
@@ -16,15 +9,15 @@ Create docker network
 $ docker network create ros_net
 ```
 
-Build middle_node image:
+Build hwbridge_node image:
 ```bash
-$ docker build --tag middle_node MiddleNode/
+$ docker build --tag hwbridge singleUAV/HwBridge/
 ```
 
 Build agent_node image:
 
 ```bash
-$ docker build --tag agent_node AgentsNode/
+$ docker build --tag jason_agent singleUAV/JasonAgent/
 ```
 
 
@@ -60,7 +53,7 @@ $ docker run -it --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_
 Jason container:
 
 ```bash
-$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node gradle 
+$ docker run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node gradle
 ```
 
 
