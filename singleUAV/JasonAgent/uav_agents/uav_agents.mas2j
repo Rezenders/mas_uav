@@ -2,5 +2,5 @@ MAS rosbridge_agents {
 
     infrastructure: Centralised
 
-    agents: sample_agent agentArchClass jasonros.RosArch;
+    agents: uav agentArchClass jasonros.RosArch;
 }
