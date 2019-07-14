@@ -49,7 +49,7 @@ Note: ardupilot is the ip of the ardupilot container
 
 Container publishing to mavros:
 ```bash
-$ docker run -it --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MASTER_URI=http://master:11311 middle_node ./hw_bridge.py
+$ docker run -it --rm --net ros_net --name hwbridge --env ROS_HOSTNAME=hwbridge --env ROS_MASTER_URI=http://master:11311 hwbridge ./hw_bridge.py
 ```
 
 Jason container:
@@ -78,7 +78,7 @@ Another difference is that balenaOS uses balena as container engine not docker e
 First you will need to ssh into the board, for that you can the following command to find the board ip:
 
 ```bash
-$ balena local scan
+$ balena scan
 ```
 After that you can ssh using:
 
@@ -94,15 +94,19 @@ $ balena network create ros_net
 In order to build and push the middle_node and agent_node images you need to run:
 
 ```bash
-$ balena local push -s MiddleNode/ --app-name middle_node
+$ balena push <ip> --source singleUAV/HwBridge/ --nolive --detached
 ```
-For rosbridge:
+
+Build agent_node image:
+
 ```bash
-$ balena local push -s AgentsNode/ --app-name agent_node:rosbridge
+$ balena push <ip> --source singleUAV/JasonAgent/ --nolive --detached
 ```
-For rosjava:
+
+or
+
 ```bash
-$ balena local push -s AgentsNode/ --app-name agent_node:rosjava
+$ balena push <ip> --source singleUAV/PythonAgent/ --nolive --detached
 ```
 
 ### Running containers
@@ -132,7 +136,7 @@ Note: 150.162.53.23 is the ip of the board which will be running the mavros cont
 #### In the board
 Roscore:
 ```bash
-$ balena run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --env ROS_MASTER_URI=http://master:11311 rezenders/jason-ros roslaunch rosbridge_server rosbridge_websocket.launch address:=master
+$ balena run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --env ROS_MASTER_URI=http://master:11311 ros:melodic-ros-core roscore
 ```
 
 Mavros container:
@@ -148,19 +152,19 @@ Note: 150.162.53.104 is the ip of the host computer
 
 Container publishing to mavros:
 ```bash
-$ balena run --rm --net ros_net --name fly --env ROS_HOSTNAME=fly --env ROS_MASTER_URI=http://master:11311 middle_node rosrun fly jason_flight.py
+$ balena run -it --rm --net ros_net --name hwbridge --env ROS_HOSTNAME=hwbridge --env ROS_MASTER_URI=http://master:11311 hwbridge ./hw_bridge.py
 ```
 
 Jason container:
-
-For RosBridge:
 ```bash
-$ balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node:rosbridge jason uav_agents.mas2j
+$ balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 jason_agent gradle
 ```
-For RosJava:
+or
+
 ```bash
-$ balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 agent_node:rosjava gradle
+$ balena run -it --rm --net ros_net --name python --env ROS_HOSTNAME=python --env ROS_MASTER_URI=http://master:11311 python_agent python singleUAV.py
 ```
 
+Note: images must be tagged accordingly
 ### Docker-compose
 Not working yet
