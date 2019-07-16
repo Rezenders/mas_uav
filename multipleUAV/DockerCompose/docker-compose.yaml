@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+    master:
+        image: ros:melodic-ros-core
+        container_name: master
+        environment:
+            - ROS_HOSTNAME = master
+            - ROS_MASTER_URI=http://master:11311
+        command: roscore
+        networks:
+            - ros_net
+
+    comm_node:
+        build:
+            context: .
+            dockerfile: DockerfileComm
+        container_name: comm_node
+        environment:
+            - ROS_HOSTNAME = comm_node
+            - ROS_MASTER_URI=http://master:11311
+        network_mode: host
+        networks:
+            - ros_net
+        labels:
+            io.balena.features.balena-socket: '1'
+            io.balena.features.dbus: '1'
+        ports:
+            - "1024:1024"
+        depends_on:
+            - master
+
+networks:
+    ros_net:

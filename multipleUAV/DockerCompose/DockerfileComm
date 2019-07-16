@@ -1,0 +1,11 @@
+FROM rezenders/jason-ros
+
+RUN apt-get update && apt-get install -y \
+    python-pip \
+    && rm -rf /var/lib/apt/lists/
+
+RUN pip install simple-settings
+
+WORKDIR /testes
+COPY . ./
+CMD ["/bin/bash", "comm.sh"]
