@@ -13,22 +13,21 @@ services:
 
     comm_node:
         build:
-            context: .
-            dockerfile: DockerfileComm
+            context: comm/
         container_name: comm_node
         environment:
             - ROS_HOSTNAME = comm_node
             - ROS_MASTER_URI=http://master:11311
-        network_mode: host
         networks:
             - ros_net
         labels:
             io.balena.features.balena-socket: '1'
             io.balena.features.dbus: '1'
         ports:
-            - "1024:1024"
+            - "1024:1024/udp"
         depends_on:
             - master
+        command: python comm.py --settings=droneA
 
 networks:
     ros_net:

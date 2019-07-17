@@ -1,0 +1,3 @@
+IP_SEND = '192.168.0.48'
+IP_LISTEN = 'comm_node'
+PORT =1024

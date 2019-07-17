@@ -6,6 +6,5 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install simple-settings
 
-WORKDIR /testes
+WORKDIR /app
 COPY . ./
-CMD ["/bin/bash", "comm.sh"]

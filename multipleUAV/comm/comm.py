@@ -5,19 +5,8 @@ import rospy
 import std_msgs.msg
 import jason_msgs.msg
 
-# while True:
-#     print("{}: Test.".format(time.ctime()))
-#
-#     # Until device found alert other drones of status:
-#     comms.send(["Test sending"], IP, PORT)
-#
-#     # Wait and look again for a pixhawk
-#     time.sleep(2)
-
 def send_msg(msg):
-    print('oi')
-    pass
-    # comms.send([msg.data], settings.IP_SEND, settings.PORT)
+    comms.send([msg.data], settings.IP_SEND, settings.PORT)
 
 def main():
     print("Starting Communication node.")
@@ -34,7 +23,7 @@ def main():
     queue_size=1,
     latch=False)
 
-    rate = 2
+    rate = rospy.Rate(2)
     while not rospy.is_shutdown():
         print(settings.IP_LISTEN)
         m=comms.recieve(settings.IP_LISTEN, settings.PORT)
