@@ -1,4 +1,4 @@
-MAS rosbridge_agents {
+MAS uav_agents {
 
     infrastructure: Centralised
 

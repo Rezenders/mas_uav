@@ -5,9 +5,9 @@ def send(msg, ip, port):
     s = socket(AF_INET, SOCK_DGRAM)
     s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
     for m in msg:
-        data = "{0}: Device: {1} Message:{2}".format(time.ctime(), gethostname(), m)
+        data = m
         s.sendto(data, (ip, port))
-        print("Sending " + data)
+        print("Sending:   " + data)
         time.sleep(1)
     s.close()
 

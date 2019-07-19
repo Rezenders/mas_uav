@@ -7,33 +7,29 @@ import jason_msgs.msg
 
 def send_msg(msg):
     comms.send([msg.data], settings.IP_SEND, settings.PORT)
+    print("ENVIOU " + msg.data)
 
 def main():
     print("Starting Communication node.")
     rospy.init_node('Communication')
 
     send_msg_sub = rospy.Subscriber(
-        '/agent/send_msg',
+        '/comm/send_msg',
         std_msgs.msg.String,
         send_msg)
 
-    receive_msg_pub = rospy.Publisher(
-    '/jason/percepts',
-    jason_msgs.msg.Perception,
-    queue_size=1,
-    latch=False)
+    comm_message_pub = rospy.Publisher(
+        '/comm/receive_msg',
+        std_msgs.msg.String,
+        queue_size=1,
+        latch=False)
 
     rate = rospy.Rate(2)
     while not rospy.is_shutdown():
-        print(settings.IP_LISTEN)
         m=comms.recieve(settings.IP_LISTEN, settings.PORT)
         if m[1][0]:
-            perception = jason_msgs.msg.Perception()
-            perception.perception_name = "message"
-            perception.parameters = m[0]
-            perception.update = False
             print(m[0])
-            receive_msg_pub.publish(perception)
+            comm_message_pub.publish(m[0])
 
         rate.sleep()
     rospy.spin()
