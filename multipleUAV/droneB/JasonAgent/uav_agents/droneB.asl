@@ -1,7 +1,8 @@
 !fly.
 
 +!fly : true <-
-	!connect;
+	.send(droneA, tell, in_range("B"));
+	// !connect;
 	// !start_coordination;
 	// .print("Starting Jason Agent node.");
 	// set_mode("GUIDED");
