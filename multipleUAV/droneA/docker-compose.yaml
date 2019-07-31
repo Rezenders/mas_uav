@@ -39,7 +39,6 @@ services:
             io.balena.features.dbus: '1'
         ports:
             - "1024:1024/udp"
-            - "1024:1024/tcp"
         depends_on:
             - master
             - mavros
