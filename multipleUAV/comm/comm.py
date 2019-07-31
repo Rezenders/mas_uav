@@ -5,10 +5,10 @@ import std_msgs.msg
 import jason_msgs.msg
 
 def send_msg(msg):
-    # data = "droneA, droneB, in_range(\"B\"), tell"
-    data = msg.receiver + ", " + msg.sender + ", " + msg.data + ", " + msg.itlforce
-    IP = agents_ip[msg.receiver][0]
-    PORT = agents_ip[msg.receiver][1]
+    data = msg.data
+    receiver = data.split(',')[3]
+    IP = agents_ip[receiver][0]
+    PORT = agents_ip[receiver][1]
 
     s = socket(AF_INET, SOCK_DGRAM)
     s.sendto(data, (IP, PORT))
@@ -40,12 +40,8 @@ def main():
             m = s.recvfrom(1024)
             s.close()
             if m[1][0]:
-                m_aux = [x.strip() for x in m[0].split(',')]
                 message = jason_msgs.msg.Message()
-                message.receiver = m_aux[0]
-                message.sender = m_aux[1]
-                message.data = m_aux[2]
-                message.itlforce = m_aux[3]
+                message.data = m[0]
                 print(message)
                 comm_message_pub.publish(message)
         except timeout:
