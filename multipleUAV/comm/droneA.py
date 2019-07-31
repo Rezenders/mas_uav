@@ -1,3 +1,0 @@
-IP_SEND = '150.162.53.68'
-IP_LISTEN = 'comm'
-PORT =1024

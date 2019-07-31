@@ -1,5 +1,0 @@
-FROM rezenders/jason-ros
-
-WORKDIR /testes
-COPY . ./
-CMD ["/bin/bash", "receive.sh"]
