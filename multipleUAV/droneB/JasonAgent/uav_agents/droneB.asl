@@ -1,7 +1,10 @@
-!fly.
+!whoami.
+!start_mision.
 
-+!fly : true <-
-	.send(droneA, tell, in_range("B"));
++!whoami <- .my_name(Me); .term2string(Me, SMe); +online(SMe).
+
++!start_mision : true <-
+	.send(droneA, tell, handshake("B"));
 	// !connect;
 	// !start_coordination;
 	// .print("Starting Jason Agent node.");
@@ -26,16 +29,52 @@
 // 		!start_coordination.
 
 
-+message("?")[source(percept)]
-	<- 	send_msg("B");
-	    .wait(1000);
-		-message("?")[source(percept)].
+// +message("?")[source(percept)]
+// 	<- 	send_msg("B");
+// 	    .wait(1000);
+// 		-message("?")[source(percept)].
+//
+// +!connect : message("A")[source(percept)]
+// 	<- 	.print("Connected to drone A").
+//
+// +!connect
+// 	<- 	.print("Can't find drone A");
+// 		send_msg("?");
+// 		.wait(1000);
+// 		!connect.
 
-+!connect : message("A")[source(percept)]
-	<- 	.print("Connected to drone A").
++!connect: ack("A") & know("B")  <- .print("Connection estabilished!").
 
 +!connect
-	<- 	.print("Can't find drone A");
-		send_msg("?");
-		.wait(1000);
-		!connect.
+	<-	!wave;
+	 	!ack;
+		!connect;
+		.
+
++!ack: 	handshake("A")[source(droneA)]
+	<- 	.send(droneA, tell, ack("B"));
+		.print("Aknowledged A!");
+		+know("B");
+		.
+
++!ack: 	handshake("A")
+	<- 	.send(droneA, tell, ack("B"));
+		.print("Aknowledged A!");
+		+know("B");
+		.
+
++!ack: 	handshake(X)
+	<- 	.send(droneA, tell, ack("B"));
+		.print("Aknowledged A!");
+		+know("B");
+		.
+
++!ack <- .print("ACK AAAAA").
+
++!wave : not ack("A")
+	<- 	.print("Advertising drone B");
+		.send(droneA, tell, handshake("B"));
+		.wait(2000);
+		.
+
++!wave.
