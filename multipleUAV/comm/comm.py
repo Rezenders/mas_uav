@@ -42,7 +42,7 @@ def main():
             if m[1][0]:
                 message = jason_msgs.msg.Message()
                 message.data = m[0]
-                print(message)
+                print("Received " + message.data)
                 comm_message_pub.publish(message)
         except timeout:
             s.close()
