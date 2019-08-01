@@ -1,3 +1,6 @@
+[DEFAULT]
+rate = 100
+
 [state]
 name = /mavros/state
 msg_type = State
