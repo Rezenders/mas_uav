@@ -1,15 +1,62 @@
-balena run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --env ROS_MASTER_URI=http://master:11311 local_image_master roscore
+## Hardware in the loop
 
-balena run -it --rm -p 14551:14551/udp --net ros_net  --name mavros --env ROS_HOSTNAME=mavros --env ROS_MASTER_URI=http://master:11311  local_image_mavros
+The hardware in the loop was tested using a raspbery pi 3 model B but it should work with other armv7 boards.
 
-$ roslaunch launch/apm.launch fcu_url:="udp://:14551@150.162.53.104:14555"
+[balenaOS](https://www.balena.io/os/#download) is used as Operating System, you must download it and install before running this project.
 
+Also, you have to download and install [balena-cli](https://www.balena.io/docs/reference/cli/) on your host machine.
 
-comm:
-balena run -it --rm -p 1024:1024/udp --net ros_net --name comm --env ROS_HOSTNAME=comm --env ROS_MASTER_URI=http://master:11311 local_image_comm
+Another difference is that balenaOS uses balena as container engine not docker engine. However, they are compatible.
 
-hwbridge:
-balena run -it --rm --net ros_net --name hwbridge --env ROS_HOSTNAME=hwbridge --env ROS_MASTER_URI=http://master:11311 local_image_hwbridge ./hw_bridge.py
+#### In your host machine.
 
-jason:
-balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 local_image_jason
+Allow xhost:
+```bash
+$ xhost +local:root # for the lazy and reckless
+```
+
+Ardupilot container1:
+```bash
+$ docker run -it --rm -p 14555:14555/udp --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot --net ros_net rezenders/ardupilot-ubuntu
+```
+
+Note: Now we have to use ```-p 14555:14555/udp``` to bind the container 14555 port with the host 14555 port
+
+Then:
+```bash
+$ sim_vehicle.py -v ArduCopter --console --map -L UFSC --out 150.162.53.67:14551
+```
+
+Note: 150.162.53.67 is the ip of the board which will be running the mavros container, not the container\`s ip.
+
+Ardupilot container2:
+```bash
+$ docker run -it --rm -p 14556:14556/udp --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name ardupilot2 --net ros_net rezenders/ardupilot-ubuntu
+```
+
+Note: Now we have to use ```-p 14556:14556/udp``` to bind the container 14556 port with the host 14556 port
+
+Then:
+```bash
+$ sim_vehicle.py -v ArduCopter --console --map -L UFSC --out 150.162.53.68:14551
+```
+
+Note: 150.162.53.68 is the ip of the board which will be running the mavros container, not the container\`s ip.
+
+#### In the board
+
+DroneA:
+```
+$ cd droneA/
+$ balena push 150.162.53.67
+```
+
+Note: 150.162.53.67 is the droneA board ip
+
+DroneB:
+```
+$ cd droneB/
+$ balena push 150.162.53.68
+```
+
+Note: 150.162.53.68 is the droneB board ip

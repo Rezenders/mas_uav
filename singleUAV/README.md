@@ -66,7 +66,7 @@ $ docker run -it --rm --net ros_net --name python --env ROS_HOSTNAME=python --en
 
 ## Hardware in the loop
 
-The hardware in the loop was tested using a beaglebone black but it should work with other armv7 boards.
+The hardware in the loop was tested using a raspbery pi 3 model B but it should work with other armv7 boards.
 
 [balenaOS](https://www.balena.io/os/#download) is used as Operating System, you must download it and install before running this project.
 
