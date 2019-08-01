@@ -1,9 +1,7 @@
 victm(1, -27.604011, -48.518338).
-// victm(1, -27.603846, -48.518194).
-victm(2, -27.603585, -48.518465).
-// victm(2, -27.603587, -48.518445).
-victm(3, -27.603693, -48.518641).
-// victm(3, -27.603962, -48.518449).
+victm(2, -27.603716, -48.518078).
+victm(3, -27.603585, -48.518465).
+victm(4, -27.603693, -48.518641).
 
 !whoami.
 !scout_mission.
@@ -16,39 +14,14 @@ victm(3, -27.603693, -48.518641).
 	!fly;
 	.
 
-+!fly <-
-	!setMode("GUIDED");
-	arm_motors(True);
-	!takeOff(5);
-	!goToPos(-27.603683, -48.518052, 40);
-	!goToPos(-27.603518, -48.518329, 40);
-	!goToPos(-27.603677, -48.518652, 40);
-	set_mode("RTL");
-	.
-
-+!setMode(Mode)
-	<- 	set_mode(Mode);
-		.wait(state(Mode));
-		.
-
-+!takeOff(Alt)
-	<-	takeoff(Alt);
-		.wait(altitude(A) & math.abs(A-Alt) <= 0.1);
-		.
-
-+!goToPos(Lat, Long, Alt)
-	<- 	setpoint(Lat, Long, Alt);
-		.wait(global_pos(X,Y) & math.abs(X -(Lat)) <=0.00001 & math.abs(Y -(Long)) <=0.00001);
-		.
-
-+!wait_droneB: online("droneB")
-	<- 	.print("Drone B in range");
-		.
-
-+!wait_droneB
-	<- 	.send(droneB, askOne, online(X));
-		.wait(1000);
-		!wait_droneB;
++!fly
+	<-	!setMode("GUIDED");
+		arm_motors(True);
+		!takeOff(5);
+		!goToPos(-27.603683, -48.518052, 40);
+		!goToPos(-27.603518, -48.518329, 40);
+		!goToPos(-27.603677, -48.518652, 40);
+		set_mode("RTL");
 		.
 
 +!searchVictms
@@ -70,3 +43,28 @@ victm(3, -27.603693, -48.518641).
 +!isVictm([]).
 
 -!isVictm([H|T]) <- !isVictm(T).
+
++!wait_droneB: online("droneB")
+	<- 	.print("Drone B in range");
+		.
+
++!wait_droneB
+	<- 	.send(droneB, askOne, online(X));
+		.wait(1000);
+		!wait_droneB;
+		.
+
++!setMode(Mode)
+	<- 	set_mode(Mode);
+		.wait(state(Mode));
+		.
+
++!takeOff(Alt)
+	<-	takeoff(Alt);
+		.wait(altitude(A) & math.abs(A-Alt) <= 0.1);
+		.
+
++!goToPos(Lat, Long, Alt)
+	<- 	setpoint(Lat, Long, Alt);
+		.wait(global_pos(X,Y) & math.abs(X -(Lat)) <=0.00001 & math.abs(Y -(Long)) <=0.00001);
+		.
