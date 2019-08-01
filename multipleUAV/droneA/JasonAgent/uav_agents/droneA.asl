@@ -1,33 +1,72 @@
+victm(1, -27.604011, -48.518338).
+// victm(1, -27.603846, -48.518194).
+victm(2, -27.603585, -48.518465).
+// victm(2, -27.603587, -48.518445).
+victm(3, -27.603693, -48.518641).
+// victm(3, -27.603962, -48.518449).
+
 !whoami.
-!start_mision.
+!scout_mission.
 
 +!whoami <- .my_name(Me); .term2string(Me, SMe); +online(SMe).
 
-+!start_mision : true <-
-	// .send(droneB, tell, handshake("A"));
-	!inrange_droneB;
-	// .print(A);
-	// !wait_droneB;
-	// !connect;
-	// !start_coordination;
-	// .print("Starting Jason Agent node.");
-	// set_mode("GUIDED");
-	// .wait(state("GUIDED"));
-	// arm_motors(True);
-	// takeoff(5);
-	// .wait(altitude(A) & math.abs(A-5) <= 0.1);
-	// setpoint(-27.603683, -48.518052, 40);
-	// .wait(global_pos(X,Y) & math.abs(X -(-27.603683)) <=0.00001 & math.abs(Y -(-48.518052)) <=0.00001);
-	// set_mode("RTL");
++!scout_mission : true <-
+	!wait_droneB;
+	!!searchVictms;
+	!fly;
 	.
 
++!fly <-
+	!setMode("GUIDED");
+	arm_motors(True);
+	!takeOff(5);
+	!goToPos(-27.603683, -48.518052, 40);
+	!goToPos(-27.603518, -48.518329, 40);
+	!goToPos(-27.603677, -48.518652, 40);
+	set_mode("RTL");
+	.
 
-+!inrange_droneB: online("droneB")
++!setMode(Mode)
+	<- 	set_mode(Mode);
+		.wait(state(Mode));
+		.
+
++!takeOff(Alt)
+	<-	takeoff(Alt);
+		.wait(altitude(A) & math.abs(A-Alt) <= 0.1);
+		.
+
++!goToPos(Lat, Long, Alt)
+	<- 	setpoint(Lat, Long, Alt);
+		.wait(global_pos(X,Y) & math.abs(X -(Lat)) <=0.00001 & math.abs(Y -(Long)) <=0.00001);
+		.
+
++!wait_droneB: online("droneB")
 	<- 	.print("Drone B in range");
 		.
 
-+!inrange_droneB
++!wait_droneB
 	<- 	.send(droneB, askOne, online(X));
 		.wait(1000);
-		!inrange_droneB;
+		!wait_droneB;
 		.
+
++!searchVictms
+	<-	.findall([N,X,Y],victm(N,X,Y),L);
+		!isVictm(L);
+		.wait(500);
+		!searchVictms;
+		.
+
++!isVictm([H|T])
+	<- 	H = [N, Lat, Long];
+		?global_pos(X,Y) & math.abs(X -(Lat)) <=0.00001 & math.abs(Y -(Long)) <=0.00001;
+		-victm(N, Lat, Long);
+		.print("Found victm ", H);
+		.send(droneB, tell, victm(N,Lat,Long));
+		!isVictm(T);
+		.
+
++!isVictm([]).
+
+-!isVictm([H|T]) <- !isVictm(T).
