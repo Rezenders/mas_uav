@@ -57,13 +57,13 @@ def receive_msg(msg):
 
     if itlforce == "askOne":
         if functor == "online":
-            d = "online(" + my_name + ")"
+            d = "online(\"" + my_name + "\")"
             send_msg(msg_split[0]+'->'+msg_split[0], msg_split[1], 'tell', d)
 
 def wait_droneB():
     while True:
         send_msg(0, 'droneB', 'askOne', 'online(X)')
-        if "online" in messages and "droneB" in messages["online"]:
+        if "online" in messages and "\"droneB\"" in messages["online"]:
             break
         else:
             message_event.clear()
