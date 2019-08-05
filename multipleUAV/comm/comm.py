@@ -13,7 +13,7 @@ def send_msg(msg):
     s = socket(AF_INET, SOCK_DGRAM)
     s.sendto(data, (IP, PORT))
     s.close()
-    print("Sending: " + data)
+    # print("Sending: " + data)
 
 def main():
     print("Starting Communication node.")
@@ -42,7 +42,7 @@ def main():
             if m[1][0]:
                 message = jason_msgs.msg.Message()
                 message.data = m[0]
-                print("Received " + message.data)
+                # print("Received " + message.data)
                 comm_message_pub.publish(message)
         except timeout:
             s.close()
