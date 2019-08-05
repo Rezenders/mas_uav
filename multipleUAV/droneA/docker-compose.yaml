@@ -80,5 +80,22 @@ services:
             - "3272"
         ports:
             - "3272:3272"
+    # python:
+    #     build:
+    #         context: PythonAgent/
+    #     command: python droneA.py
+    #     container_name: python
+    #     environment:
+    #         - ROS_HOSTNAME = python
+    #         - ROS_MASTER_URI=http://master:11311
+    #     networks:
+    #         - ros_net
+    #     labels:
+    #         io.balena.update.strategy: kill-then-download
+    #     depends_on:
+    #         - master
+    #         - comm
+    #         - hwbridge
+    #         - mavros
 networks:
     ros_net:
