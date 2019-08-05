@@ -13,7 +13,7 @@ services:
 
     mavros:
         image: rezenders/mavros
-        command: roslaunch launch/apm.launch fcu_url:="udp://:14551@192.168.0.37:14556"
+        command: roslaunch launch/apm.launch fcu_url:="udp://:14551@:14556"
         container_name: mavros
         environment:
             - ROS_HOSTNAME = mavros
