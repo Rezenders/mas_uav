@@ -8,18 +8,18 @@
 	!deliverBuoys;
 	.
 
-+!deliverBuoys: victm(_, _, _)
-	<-	.findall([N, Lat,Long], victm(N,Lat,Long), V);
++!deliverBuoys: victim(_, _, _)
+	<-	.findall([N, Lat,Long], victim(N,Lat,Long), V);
 		.sort(V, SV);
 		.nth(0, SV, Next);
 		Next = [N, Lat, Long];
-		
+
 		!setMode("GUIDED");
 		arm_motors(True);
 		!takeOff(5);
-		!goToPos(Lat, Long, 20);
-		.print("Droping buoy to victm ", victm(N,Lat,Long));
-		.abolish(victm(N, Lat, Long));
+		!goToPos(Lat, Long, 25);
+		.print("Droping buoy to victim ", victim(N,Lat,Long));
+		.abolish(victim(N, Lat, Long));
 		set_mode("RTL");
 		.wait(global_pos(X,Y) & home_pos(X2,Y2) & math.abs(X -(X2)) <=0.00001 & math.abs(Y -(Y2)) <=0.00001 & altitude(A) & math.abs(A-0) <= 0.1);
 		.print("Landed! beginning charging and buoy replacement!");

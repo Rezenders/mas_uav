@@ -1,7 +1,7 @@
-victm(1, -27.604011, -48.518338).
-victm(2, -27.603716, -48.518078).
-victm(3, -27.603585, -48.518465).
-victm(4, -27.603693, -48.518641).
+victim(1, -27.604011, -48.518338).
+victim(2, -27.603716, -48.518078).
+victim(3, -27.603585, -48.518465).
+victim(4, -27.603693, -48.518641).
 
 !whoami.
 !scout_mission.
@@ -10,7 +10,7 @@ victm(4, -27.603693, -48.518641).
 
 +!scout_mission : true <-
 	!wait_droneB;
-	!!searchVictms;
+	!!searchvictims;
 	!fly;
 	.
 
@@ -24,25 +24,25 @@ victm(4, -27.603693, -48.518641).
 		set_mode("RTL");
 		.
 
-+!searchVictms
-	<-	.findall([N,X,Y],victm(N,X,Y),L);
-		!isVictm(L);
++!searchvictims
+	<-	.findall([N,X,Y],victim(N,X,Y),L);
+		!isvictim(L);
 		.wait(500);
-		!searchVictms;
+		!searchvictims;
 		.
 
-+!isVictm([H|T])
++!isvictim([H|T])
 	<- 	H = [N, Lat, Long];
 		?global_pos(X,Y) & math.abs(X -(Lat)) <=0.00001 & math.abs(Y -(Long)) <=0.00001;
-		-victm(N, Lat, Long);
-		.print("Found victm ", H);
-		.send(droneB, tell, victm(N,Lat,Long));
-		!isVictm(T);
+		-victim(N, Lat, Long);
+		.print("Found victim ", H);
+		.send(droneB, tell, victim(N,Lat,Long));
+		!isvictim(T);
 		.
 
-+!isVictm([]).
++!isvictim([]).
 
--!isVictm([H|T]) <- !isVictm(T).
+-!isvictim([H|T]) <- !isvictim(T).
 
 +!wait_droneB: online("droneB")
 	<- 	.print("Drone B in range");
