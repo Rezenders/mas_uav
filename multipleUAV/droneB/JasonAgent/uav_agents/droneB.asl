@@ -14,16 +14,7 @@
 		.nth(0, SV, Next);
 		Next = [N, Lat, Long];
 
-		!setMode("GUIDED");
-		arm_motors(True);
-		!takeOff(5);
-		!goToPos(Lat, Long, 25);
-		.print("Droping buoy to victim ", victim(N,Lat,Long));
-		.abolish(victim(N, Lat, Long));
-		set_mode("RTL");
-		.wait(global_pos(X,Y) & home_pos(X2,Y2) & math.abs(X -(X2)) <=0.00001 & math.abs(Y -(Y2)) <=0.00001 & altitude(A) & math.abs(A-0) <= 0.1);
-		.print("Landed! beginning charging and buoy replacement!");
-		.wait(3000);
+		!rescueVictim(N, Lat, Long)
 		!deliverBuoys;
 		.
 
@@ -32,6 +23,17 @@
 		!deliverBuoys;
 		.
 
++!rescueVictim(N, Lat, Long)
+	<- 	!setMode("GUIDED");
+		arm_motors(True);
+		!takeOff(5);
+		!goToPos(Lat, Long, 25);
+		.print("Droping buoy to victim ", victim(N,Lat,Long));
+		.abolish(victim(N, Lat, Long));
+		!returnToLand;
+		.print("Landed! beginning charging and buoy replacement!");
+		.wait(3000);
+		.
 +!wait_droneA: online("droneA")
 	<- 	.print("Drone A in range");
 		.
@@ -55,4 +57,9 @@
 +!goToPos(Lat, Long, Alt)
 	<- 	setpoint(Lat, Long, Alt);
 		.wait(global_pos(X,Y) & math.abs(X -(Lat)) <=0.00001 & math.abs(Y -(Long)) <=0.00001);
+		.
+
++!returnToLand
+	<-	set_mode("RTL");
+		.wait(global_pos(X,Y) & home_pos(X2,Y2) & math.abs(X -(X2)) <=0.00001 & math.abs(Y -(Y2)) <=0.00001 & altitude(A) & math.abs(A-0) <= 0.1);
 		.

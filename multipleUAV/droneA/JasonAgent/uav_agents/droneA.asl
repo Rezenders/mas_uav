@@ -21,7 +21,7 @@ victim(4, -27.603693, -48.518641).
 		!goToPos(-27.603683, -48.518052, 40);
 		!goToPos(-27.603518, -48.518329, 40);
 		!goToPos(-27.603677, -48.518652, 40);
-		set_mode("RTL");
+		!returnToLand;
 		.
 
 +!searchvictims
@@ -67,4 +67,9 @@ victim(4, -27.603693, -48.518641).
 +!goToPos(Lat, Long, Alt)
 	<- 	setpoint(Lat, Long, Alt);
 		.wait(global_pos(X,Y) & math.abs(X -(Lat)) <=0.00001 & math.abs(Y -(Long)) <=0.00001);
+		.
+
++!returnToLand
+	<-	set_mode("RTL");
+		.wait(global_pos(X,Y) & home_pos(X2,Y2) & math.abs(X -(X2)) <=0.00001 & math.abs(Y -(Y2)) <=0.00001 & altitude(A) & math.abs(A-0) <= 0.1);
 		.
