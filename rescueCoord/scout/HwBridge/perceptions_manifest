@@ -1,0 +1,30 @@
+[DEFAULT]
+rate = 100
+
+[state]
+name = /mavros/state
+msg_type = State
+dependencies = mavros_msgs.msg
+args = mode
+buf = update
+
+[altitude]
+name = /mavros/global_position/rel_alt
+msg_type = Float64
+dependencies = std_msgs.msg
+args = data
+buf = update
+
+[global_pos]
+name = /mavros/global_position/global
+msg_type = NavSatFix
+dependencies = sensor_msgs.msg
+args = latitude, longitude
+buf = update
+
+[home_pos]
+name = /mavros/home_position/home
+msg_type = HomePosition
+dependencies = mavros_msgs.msg
+args = geo.latitude, geo.longitude
+buf = update

@@ -1,0 +1,36 @@
+[set_mode]
+method = service
+name = /mavros/set_mode
+msg_type = SetMode
+dependencies = mavros_msgs.srv
+params_name = custom_mode
+
+[arm_motors]
+method = service
+name = mavros/cmd/arming
+msg_type = CommandBool
+dependencies = mavros_msgs.srv
+params_name = value
+params_type = bool
+
+[takeoff]
+method = service
+name = /mavros/cmd/takeoff
+msg_type = CommandTOL
+dependencies = mavros_msgs.srv
+params_name = altitude
+params_type = float
+
+[setpoint]
+method = topic
+name = /mavros/setpoint_position/global
+msg_type = GlobalPositionTarget
+dependencies = mavros_msgs.msg
+params_name = latitude, longitude, altitude
+params_type = float, float, float
+
+[land]
+method = service
+name = /mavros/cmd/land
+msg_type = CommandTOL
+dependencies = mavros_msgs.srv

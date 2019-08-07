@@ -1,0 +1,60 @@
+/*
+   Project uav_agents
+
+   Gradle build file for Jason Application
+   July 17, 2019 - 13:34:33
+*/
+
+defaultTasks 'run'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version '1.0'
+group   'org.jason'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+
+    maven { url "http://jacamo.sourceforge.net/maven2" }
+    maven { url "https://jade.tilab.com/maven/" }
+    maven { url "https://raw.github.com/jason-lang/mvn-repo/master" }
+    maven { url "https://raw.github.com/rosjava/rosjava_mvn_repo/master" }
+
+    flatDir {
+       dirs 'lib'
+    }
+}
+
+dependencies {
+    compile group: 'org.jason-lang',     name: 'jason' ,   version: '2.4'
+    compile group: 'org.jason-lang',     name: 'jasonros' ,   version: '1.4'
+    compile group: 'org.jason-lang',     name: 'jasonros_msgs' ,   version: '1.4'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+}
+
+task run (type: JavaExec, dependsOn: 'classes') {
+    description 'runs the application'
+    main = 'jason.infra.centralised.RunCentralisedMAS'
+    args 'uav_agents.mas2j'
+    classpath sourceSets.main.runtimeClasspath
+}
+
+clean {
+    delete 'bin'
+    delete 'build'
+}
