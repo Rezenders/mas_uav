@@ -7,13 +7,21 @@ import jason_msgs.msg
 def send_msg(msg):
     data = msg.data
     receiver = data.split(',')[3]
-    IP = agents_ip[receiver][0]
-    PORT = agents_ip[receiver][1]
-
     s = socket(AF_INET, SOCK_DGRAM)
-    s.sendto(data, (IP, PORT))
+
+    ip_sent = []
+    if receiver == "null":
+        for addr in agents_ip.iteritems():
+            if addr[0]!= "null"  and addr[1][0] not in ip_sent:
+                s.sendto(data, (addr[1][0], addr[1][1]))
+                ip_sent.append(addr[1][0])
+    else:
+        IP = agents_ip[receiver][0]
+        PORT = agents_ip[receiver][1]
+        s.sendto(data, (IP, PORT))
+
     s.close()
-    # print("Sending: " + data)
+    print("Sending: " + data)
 
 def main():
     print("Starting Communication node.")
@@ -42,7 +50,7 @@ def main():
             if m[1][0]:
                 message = jason_msgs.msg.Message()
                 message.data = m[0]
-                # print("Received " + message.data)
+                print("Received " + message.data)
                 comm_message_pub.publish(message)
         except timeout:
             s.close()
