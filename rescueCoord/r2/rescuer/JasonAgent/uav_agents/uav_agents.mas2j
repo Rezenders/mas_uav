@@ -1,0 +1,18 @@
+/*
+    uav_agents
+    ---------------------------
+
+    Jason Project File
+
+    This file defines the initial state of the MAS
+
+    Jason 2.4
+    July 17, 2019 - 13:34:33
+*/
+
+MAS uav_agents {
+
+    infrastructure: Centralised
+
+    agents: rescuer2 rescuer.asl agentArchClass jasonros.RosArch ;
+}

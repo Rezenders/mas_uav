@@ -1,4 +1,4 @@
-drone_numbers(2).
+drone_numbers(3).
 
 victim(1, -27.604011, -48.518338).
 victim(2, -27.603716, -48.518078).
@@ -77,3 +77,5 @@ victim(4, -27.603693, -48.518641).
 	<-	set_mode("RTL");
 		.wait(global_pos(X,Y) & home_pos(X2,Y2) & math.abs(X -(X2)) <=0.00001 & math.abs(Y -(Y2)) <=0.00001 & altitude(A) & math.abs(A-0) <= 0.1);
 		.
+
++!mark_as_rescued(N, Lat, Long).

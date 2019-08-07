@@ -1,5 +1,5 @@
 status("busy").
-drone_numbers(2).
+drone_numbers(3).
 
 !whoami.
 !myid.
@@ -61,7 +61,7 @@ drone_numbers(2).
 	<-	.print("I am responsible for rescuing victim ", N);
 		?victim_in_need(N, Lat, Long);
 		.abolish(victim_in_need(N,Lat,Long));
-		.broadcast(untell,victim_in_need(N,Lat,Long));
+		.broadcast(achieve, mark_as_rescued(N,Lat,Long));
 		+victim_in_rescue(N, Lat, Long);
 		.
 
@@ -102,6 +102,9 @@ drone_numbers(2).
 		.abolish(status(_));
 		+status("ready");
 		.
+
++!mark_as_rescued(N, Lat, Long)
+	<- .abolish(victim_in_need(N,Lat,Long)).
 
 +!wait_drones: drone_numbers(N) & .count(online(X), N)
 	<- 	.print("All drones in range");

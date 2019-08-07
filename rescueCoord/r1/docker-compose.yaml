@@ -27,7 +27,7 @@ services:
 
     comm:
         build:
-            context: comm/
+            context: rescuer/comm/
         container_name: comm
         environment:
             - ROS_HOSTNAME = comm
@@ -46,7 +46,7 @@ services:
 
     hwbridge:
         build:
-            context: HwBridge/
+            context: rescuer/HwBridge/
         command: python hw_bridge.py
         container_name: hwbridge
         environment:
@@ -61,7 +61,7 @@ services:
 
     jason:
         build:
-            context: JasonAgent/
+            context: rescuer/JasonAgent/
         command: gradle
         container_name: jason
         environment:
