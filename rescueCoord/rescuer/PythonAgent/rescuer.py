@@ -5,8 +5,9 @@ import time
 from threading import Event
 from threading import Thread
 from threading import RLock
+from simple_settings import settings
 
-my_name = 'droneB'
+my_name = settings.MY_NAME
 
 action_event = Event()
 perception_event = Event()
@@ -63,8 +64,8 @@ def receive_msg(msg):
 
 def wait_droneA():
     while True:
-        send_msg(0, 'droneA', 'askOne', 'online(X)')
-        if "online" in messages and "\"droneA\"" in messages["online"]:
+        send_msg(0, 'scout', 'askOne', 'online(X)')
+        if "online" in messages and "\"scout\"" in messages["online"]:
             break
         else:
             message_event.clear()

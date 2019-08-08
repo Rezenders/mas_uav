@@ -82,8 +82,8 @@ services:
             - "3272:3272"
     # python:
     #     build:
-    #         context: PythonAgent/
-    #     command: python droneB.py
+    #         context: rescuer/PythonAgent/
+    #     command: python rescuer.py --settings=r2
     #     container_name: python
     #     environment:
     #         - ROS_HOSTNAME = python

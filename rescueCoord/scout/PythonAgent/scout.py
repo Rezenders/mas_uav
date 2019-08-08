@@ -6,7 +6,7 @@ from threading import Event
 from threading import Thread
 from threading import RLock
 
-my_name = 'droneA'
+my_name = 'scout'
 
 action_event = Event()
 perception_event = Event()
@@ -62,8 +62,8 @@ def receive_msg(msg):
 
 def wait_droneB():
     while True:
-        send_msg(0, 'droneB', 'askOne', 'online(X)')
-        if "online" in messages and "\"droneB\"" in messages["online"]:
+        send_msg(0, 'rescuer1', 'askOne', 'online(X)')
+        if "online" in messages and "\"rescuer1\"" in messages["online"]:
             break
         else:
             message_event.clear()
@@ -144,7 +144,7 @@ def searchvictims():
                     print("Found Victm " + str(v) )
                     del victims[v[0]]
                     data = 'victim('+ str(v[0]) + ',' + str(v[1][0]) + ',' + str(v[1][1]) + ')'
-                    send_msg(msgId,'droneB', 'tell', data)
+                    send_msg(msgId,'rescuer1', 'tell', data)
                     msgId += 1
         time.sleep(0.5)
 
