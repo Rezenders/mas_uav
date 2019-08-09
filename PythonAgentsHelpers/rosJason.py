@@ -84,6 +84,7 @@ class RosJason:
 
         functor = data[:data.find('(')]
         args = data[(1+data.find('(')):data.find(')')]
+        args = args.split(',')
         if itlforce == "tell":
             self.message_lock.acquire()
             if functor not in self.messages:
@@ -97,3 +98,12 @@ class RosJason:
             if functor == "online":
                 d = "online(\"" + self.my_name + "\")"
                 self.replyTo(msg_split[0], msg_split[1], 'tell', d)
+
+def parseString(functor, *args):
+    string = functor + "("
+    for arg in args:
+        for a in arg:
+            string += str(a) + ","
+    string = string.strip(",")
+    string += ")"
+    return string

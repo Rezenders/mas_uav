@@ -5,19 +5,18 @@ from threading import Thread
 from rosJason import *
 
 my_name = 'scout'
-drone_number = 2
+drone_number = 3
 
 rosj = RosJason(my_name)
 
 def wait_drones():
     while True:
         rosj.broadcast('askOne', 'online(X)')
-        print(rosj.messages)
         if "online" in rosj.messages and len(rosj.messages["online"])==drone_number:
             break
         else:
+            rosj.message_event.wait(1.0)
             rosj.message_event.clear()
-            rosj.message_event.wait(2.0)
 
 
 def goToPos(lat, long, alt):
