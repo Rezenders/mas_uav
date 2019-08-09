@@ -21,7 +21,7 @@ def send_msg(msg):
         s.sendto(data, (IP, PORT))
 
     s.close()
-    print("Sending: " + data)
+    # print("Sending: " + data)
 
 def main():
     print("Starting Communication node.")
@@ -38,7 +38,7 @@ def main():
         queue_size=1,
         latch=False)
 
-    rate = rospy.Rate(2)
+    # rate = rospy.Rate(100)
     while not rospy.is_shutdown():
         IP = agents_ip["self"][0]
         PORT = agents_ip["self"][1]
@@ -50,12 +50,12 @@ def main():
             if m[1][0]:
                 message = jason_msgs.msg.Message()
                 message.data = m[0]
-                print("Received " + message.data)
+                # print("Received " + message.data)
                 comm_message_pub.publish(message)
         except timeout:
             s.close()
 
-        rate.sleep()
+        # rate.sleep()
     rospy.spin()
 
 if __name__ == '__main__':
