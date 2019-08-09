@@ -35,7 +35,6 @@ drone_numbers(3).
 
 +!propose(N): status("ready")
 	<- 	.random(R);
-		?status(S);
 		?myid(Id);
 		+propose(Id, N, R);
 		.broadcast(tell, propose(Id, N, R));
