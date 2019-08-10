@@ -45,6 +45,13 @@ jason_perceptions_sub = rospy.Subscriber(
     perception
 )
 
+def rtl():
+    act("set_mode", ["RTL"])
+    tol = 0.00001
+    while abs(float(perceptions['global_pos'][0]) - float(perceptions['home_pos'][0])) > tol or abs(
+            float(perceptions['global_pos'][1]) - float(perceptions['home_pos'][1])) > tol or abs(float(perceptions['altitude'][0]) - 0) > 0.1:
+        perception_event.clear()
+        perception_event.wait()
 
 def main():
     print("Starting python Agent node.")
@@ -69,7 +76,7 @@ def main():
         perception_event.clear()
         perception_event.wait()
 
-    act("set_mode", ["RTL"])
+    rtl()
 
 if __name__ == '__main__':
     main()
