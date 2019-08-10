@@ -1,4 +1,4 @@
-CONTAINER           NAME                   CPU                 MEM USAGE / LIMIT     MEM                 NET I/O             BLOCK I/O           PIDS
+CONTAINER ID        NAME                   CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
 f11876290fa5        python                 1.00%               25.79MiB / 975.7MiB   2.64%               17.9kB / 16.7kB     5.16MB / 0B         0
 da51bb04fdc7        mavros                 2.62%               57.05MiB / 975.7MiB   5.85%               16.3MB / 2.78MB     44.6MB / 0B         0
 e3b64a0ab9fd        hwbridge               1.16%               29.16MiB / 975.7MiB   2.99%               2.38MB / 1.43MB     22.7MB / 0B         0
