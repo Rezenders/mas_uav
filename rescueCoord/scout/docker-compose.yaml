@@ -59,34 +59,13 @@ services:
             - comm
             - mavros
 
-    # jason:
-    #     build:
-    #         context: JasonAgent/
-    #     command: gradle
-    #     container_name: jason
-    #     environment:
-    #         - ROS_HOSTNAME = jason
-    #         - ROS_MASTER_URI=http://master:11311
-    #     networks:
-    #         - ros_net
-    #     labels:
-    #         io.balena.update.strategy: kill-then-download
-    #     depends_on:
-    #         - master
-    #         - comm
-    #         - hwbridge
-    #         - mavros
-    #     expose:
-    #         - "3272"
-    #     ports:
-    #         - "3272:3272"
-    python:
+    jason:
         build:
-            context: PythonAgent/
-        command: python scout.py
-        container_name: python
+            context: JasonAgent/
+        command: gradle
+        container_name: jason
         environment:
-            - ROS_HOSTNAME = python
+            - ROS_HOSTNAME = jason
             - ROS_MASTER_URI=http://master:11311
         networks:
             - ros_net
@@ -97,5 +76,26 @@ services:
             - comm
             - hwbridge
             - mavros
+        expose:
+            - "3272"
+        ports:
+            - "3272:3272"
+    # python:
+    #     build:
+    #         context: PythonAgent/
+    #     command: python scout.py
+    #     container_name: python
+    #     environment:
+    #         - ROS_HOSTNAME = python
+    #         - ROS_MASTER_URI=http://master:11311
+    #     networks:
+    #         - ros_net
+    #     labels:
+    #         io.balena.update.strategy: kill-then-download
+    #     depends_on:
+    #         - master
+    #         - comm
+    #         - hwbridge
+    #         - mavros
 networks:
     ros_net:

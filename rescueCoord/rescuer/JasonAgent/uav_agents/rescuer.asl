@@ -14,7 +14,7 @@ drone_numbers(3).
 		!deliverBuoys;
 		.
 
-+!start_negotiation: victim_in_need(_,_,_)
++!start_negotiation: victim_in_need(_,_,_) & status("ready")
 	<-	.findall([N, Lat, Long], victim_in_need(N,Lat,Long), V);
 		.sort(V, SV);
 		.nth(0, SV, Next);
@@ -28,20 +28,23 @@ drone_numbers(3).
 		!start_negotiation;
 		.
 
++!start_negotiation: victim_in_need(_,_,_)
+	<- .print("I am busy");
+		.wait(1000);
+		!start_negotiation;
+		.
+
 +!start_negotiation
 	<-	.wait(1000);
 		!start_negotiation;
 		.
 
-+!propose(N): status("ready")
++!propose(N)
 	<- 	.random(R);
 		?myid(Id);
 		+propose(Id, N, R);
 		.broadcast(tell, propose(Id, N, R));
 		.
-
-+!propose(N)
-	<- .print("I am busy").
 
 @get_proposal[atomic]
 +!get_proposal(N, L)
@@ -66,8 +69,6 @@ drone_numbers(3).
 
 +!check_winner(N, Wid)
 	<- 	.print("Not selected!");
-		?myid(Id);
-		.print(Id, Wid);
 		.
 
 +!deliverBuoys: victim_in_rescue(_, _, _)
