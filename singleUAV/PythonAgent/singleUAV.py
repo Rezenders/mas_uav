@@ -2,80 +2,46 @@
 import rospy
 import jason_msgs.msg
 import time
-from threading import Event
+from rosJason import *
 
-action_event = Event()
-perception_event = Event()
+my_name = 'uav'
+rosj = RosJason(my_name)
 
+def goToPos(lat, long, alt):
+    rosj.act("setpoint", [str(lat), str(long), str(alt)])
+    tol = 0.00001
+    while abs(float(rosj.perceptions['global_pos'][0]) - lat) > tol or abs(
+            float(rosj.perceptions['global_pos'][1]) - long) > tol:
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
 
-def act(action_name, args):
-    action = jason_msgs.msg.Action()
-    action.action_name = action_name
-    action.parameters = args
+def takeOff(alt):
+    rosj.act("takeoff", ["5"])
+    while 'altitude' not in rosj.perceptions:
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
 
-    jason_actions_pub.publish(action)
-    action_event.clear()
-    action_event.wait()
-
-
-def action_status(msg):
-    action_event.set()
-
-
-perceptions = dict()
-def perception(msg):
-    perceptions[msg.perception_name] = msg.parameters
-    perception_event.set()
-
-
-jason_actions_status_sub = rospy.Subscriber(
-    '/jason/actions_status',
-    jason_msgs.msg.ActionStatus,
-    action_status)
-
-jason_actions_pub = rospy.Publisher(
-    '/jason/actions',
-    jason_msgs.msg.Action,
-    queue_size=1,
-    latch=False)
-
-jason_perceptions_sub = rospy.Subscriber(
-    '/jason/percepts',
-    jason_msgs.msg.Perception,
-    perception
-)
+    while abs(float(rosj.perceptions['altitude'][0]) - alt) > 0.1:
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
 
 def rtl():
-    act("set_mode", ["RTL"])
+    rosj.act("set_mode", ["RTL"])
     tol = 0.00001
-    while abs(float(perceptions['global_pos'][0]) - float(perceptions['home_pos'][0])) > tol or abs(
-            float(perceptions['global_pos'][1]) - float(perceptions['home_pos'][1])) > tol or abs(float(perceptions['altitude'][0]) - 0) > 0.1:
-        perception_event.clear()
-        perception_event.wait()
+    while abs(float(rosj.perceptions['global_pos'][0]) - float(rosj.perceptions['home_pos'][0])) > tol or abs(
+            float(rosj.perceptions['global_pos'][1]) - float(rosj.perceptions['home_pos'][1])) > tol or abs(float(rosj.perceptions['altitude'][0]) - 0) > 0.1:
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
 
 def main():
     print("Starting python Agent node.")
     rospy.init_node('Agent')
-    tol = 0.00001
 
-    act("set_mode", ["GUIDED"])
-    act("arm_motors", ["True"])
+    rosj.act("set_mode", ["GUIDED"])
+    rosj.act("arm_motors", ["True"])
 
-    act("takeoff", ["5"])
-    while 'altitude' not in perceptions:
-        perception_event.clear()
-        perception_event.wait()
-
-    while abs(float(perceptions['altitude'][0]) - 5.0) > 0.1:
-        perception_event.clear()
-        perception_event.wait()
-
-    act("setpoint", ["-27.603683", "-48.518052", "40"])
-    while abs(float(perceptions['global_pos'][0]) - (-27.603683)) > tol and abs(
-            float(perceptions['global_pos'][1]) - (-48.51805)) > tol:
-        perception_event.clear()
-        perception_event.wait()
-
+    takeOff(5)
+    goToPos(-27.603683, -48.518052, 40)
     rtl()
 
 if __name__ == '__main__':
