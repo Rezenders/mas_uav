@@ -6,17 +6,18 @@ services:
         command: roscore
         container_name: master
         environment:
-            - ROS_HOSTNAME = master
+            - ROS_HOSTNAME=master
             - ROS_MASTER_URI=http://master:11311
         networks:
             - ros_net
+        restart: always
 
     mavros:
         image: rezenders/mavros
         command: roslaunch launch/apm.launch fcu_url:="udp://:14551@:14555"
         container_name: mavros
         environment:
-            - ROS_HOSTNAME = mavros
+            - ROS_HOSTNAME=mavros
             - ROS_MASTER_URI=http://master:11311
         networks:
             - ros_net
@@ -24,6 +25,7 @@ services:
             - "14551:14551/udp"
         depends_on:
             - master
+        restart: always
 
     hwbridge:
         build:
@@ -31,14 +33,14 @@ services:
         command: python hw_bridge.py
         container_name: hwbridge
         environment:
-            - ROS_HOSTNAME = hwbridge
+            - ROS_HOSTNAME=hwbridge
             - ROS_MASTER_URI=http://master:11311
         networks:
             - ros_net
         depends_on:
             - master
             - mavros
-
+        restart: always
     # jason:
     #     build:
     #         context: JasonAgent/
@@ -65,7 +67,7 @@ services:
         command: python singleUAV.py
         container_name: python
         environment:
-            - ROS_HOSTNAME = python
+            - ROS_HOSTNAME=python
             - ROS_MASTER_URI=http://master:11311
         networks:
             - ros_net
