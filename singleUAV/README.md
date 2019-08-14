@@ -74,46 +74,19 @@ Also, you have to download and install [balena-cli](https://www.balena.io/docs/r
 
 Another difference is that balenaOS uses balena as container engine not docker engine. However, they are compatible.
 
-### Create Netwrok, build and push images
-First you will need to ssh into the board, for that you can the following command to find the board ip:
+### Running the experiment
+
+The main difference here is that ardupilot container will be executed in the host machine and all other applications directly in the board.
+
+Boot the board with balenaOS and connect it to the same network as the host PC.
+
+Then, you will need to find the board ip, for that run:
 
 ```bash
 $ balena scan
 ```
-After that you can ssh using:
 
-```bash
-$ ssh root@<ip> -p22222
-```
-
-Then you must create the network:
-
-```bash
-$ balena network create ros_net
-```
-In order to build and push the middle_node and agent_node images you need to run:
-
-```bash
-$ balena push <ip> --source singleUAV/HwBridge/ --nolive --detached
-```
-
-Build agent_node image:
-
-```bash
-$ balena push <ip> --source singleUAV/JasonAgent/ --nolive --detached
-```
-
-or
-
-```bash
-$ balena push <ip> --source singleUAV/PythonAgent/ --nolive --detached
-```
-
-### Running containers
-The main difference here is that ardupilot container will be executed in the host machine and that you need to ssh into the board to run each container (this will be improved in the future).
-
-#### In your host machine.
-
+#### Running ardupilot
 Allow xhost:
 ```bash
 $ xhost +local:root # for the lazy and reckless
@@ -131,40 +104,12 @@ Then:
 $ sim_vehicle.py -v ArduCopter --console --map -L UFSC --out 150.162.53.23:14551
 ```
 
-Note: 150.162.53.23 is the ip of the board which will be running the mavros container, not the container\`s ip.
+Note: 150.162.53.23 is the ip of the board which will be running the mavros container, not the container\`s ip. The one you found using ```$ balena scan```
 
-#### In the board
-Roscore:
-```bash
-$ balena run -it --rm --net ros_net  --name master --env ROS_HOSTNAME=master --env ROS_MASTER_URI=http://master:11311 ros:melodic-ros-core roscore
-```
+### Running mission application
 
-Mavros container:
-```bash
-$ balena run -it --rm -p 14551:14551/udp --net ros_net  --name mavros --env ROS_HOSTNAME=mavros --env ROS_MASTER_URI=http://master:11311  rezenders/mavros
-```
-Note: Now we have to use ```-p 14551:14551/udp``` to bind the container 14551 port with the board 14551 port
+In the singleUAV directory run:
 
 ```bash
-$ roslaunch launch/apm.launch fcu_url:="udp://:14551@150.162.53.104:14555"
+$ balena push <ip>
 ```
-Note: 150.162.53.104 is the ip of the host computer
-
-Container publishing to mavros:
-```bash
-$ balena run -it --rm --net ros_net --name hwbridge --env ROS_HOSTNAME=hwbridge --env ROS_MASTER_URI=http://master:11311 hwbridge ./hw_bridge.py
-```
-
-Jason container:
-```bash
-$ balena run -it --rm --net ros_net --name jason --env ROS_HOSTNAME=jason --env ROS_MASTER_URI=http://master:11311 jason_agent gradle
-```
-or
-
-```bash
-$ balena run -it --rm --net ros_net --name python --env ROS_HOSTNAME=python --env ROS_MASTER_URI=http://master:11311 python_agent python singleUAV.py
-```
-
-Note: images must be tagged accordingly
-### Docker-compose
-Not working yet
