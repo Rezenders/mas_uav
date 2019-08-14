@@ -1,4 +1,4 @@
-[![rescueCoord video](https://img.youtube.com/vi/iV1gVJdShcI/0.jpg)](https://www.youtube.com/watch?v=https://img.youtube.com/vi/iV1gVJdShcI/0.jpg)
+[![rescueCoord video](https://img.youtube.com/vi/iV1gVJdShcI/0.jpg)](https://www.youtube.com/watch?v=iV1gVJdShcI&feature=youtu.be)
 
 ## Hardware in the loop
 
