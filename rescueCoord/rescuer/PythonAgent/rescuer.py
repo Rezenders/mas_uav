@@ -111,7 +111,6 @@ def get_proposal(N):
     proposals_aux = [p for p in rosj.messages["propose"] if p[1] == N]
     for p in proposals_aux:
         proposals[N].append(p)
-    print(proposals)
     return proposals[N]
 
 def choose_proposal(N, L):
@@ -124,7 +123,6 @@ def choose_proposal(N, L):
     return proposal
 
 def check_winner(N, Winner, victim):
-    print(Winner)
     if Winner[0] == my_name:
         status = "busy"
         status_event.clear()
@@ -133,6 +131,7 @@ def check_winner(N, Winner, victim):
         victims_in_rescue.append(victim)
         rescue_lock.release()
         rescue_event.set()
+        rosj.broadcast('untell', parseString("victim_in_need", victim))
     else:
         print("Not selected")
 

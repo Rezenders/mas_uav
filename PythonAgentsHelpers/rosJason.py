@@ -99,6 +99,13 @@ class RosJason:
                 d = "online(\"" + self.my_name + "\")"
                 self.replyTo(msg_split[0], msg_split[1], 'tell', d)
 
+        if itlforce == "untell":
+            if functor == "victim_in_need":
+                self.message_lock.acquire()
+                if args in self.messages[functor]:
+                    self.messages[functor].remove(args)
+                self.message_lock.release()
+
 def parseString(functor, *args):
     string = functor + "("
     for arg in args:
