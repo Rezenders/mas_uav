@@ -1,826 +1,301 @@
 CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.05%              22.05MiB / 975.7MiB   2.26%               190kB / 112kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.87MiB / 975.7MiB   2.55%               1.73MB / 1.7MB      21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.48%              28.04MiB / 975.7MiB   2.87%               34.7MB / 59.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.90%               53.23MiB / 975.7MiB   5.46%               14.4MB / 2.43MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          1.04%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    8.10%               50.08MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.71%              22.05MiB / 975.7MiB   2.26%               245kB / 141kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.87MiB / 975.7MiB   2.55%               1.73MB / 1.7MB      21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.30%              28.04MiB / 975.7MiB   2.87%               34.7MB / 59.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.74%               53.23MiB / 975.7MiB   5.46%               14.4MB / 2.43MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.93%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.08MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.70%              22.05MiB / 975.7MiB   2.26%               303kB / 171kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.87MiB / 975.7MiB   2.55%               1.73MB / 1.7MB      21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.25%              28.04MiB / 975.7MiB   2.87%               34.7MB / 59.7MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.54%               53.23MiB / 975.7MiB   5.46%               14.4MB / 2.43MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.88%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.08MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.82%              22.05MiB / 975.7MiB   2.26%               361kB / 202kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.98%               24.87MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.06%              28.04MiB / 975.7MiB   2.87%               34.8MB / 59.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.71%               53.23MiB / 975.7MiB   5.46%               14.4MB / 2.43MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.91%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    4.39%               50.08MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.20%              22.05MiB / 975.7MiB   2.26%               415kB / 230kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.88MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.54%              28.05MiB / 975.7MiB   2.87%               34.8MB / 59.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.62%               53.23MiB / 975.7MiB   5.46%               14.5MB / 2.44MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.96%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.08MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          22.00%              22.06MiB / 975.7MiB   2.26%               494kB / 272kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.88MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.56%              28.05MiB / 975.7MiB   2.87%               34.8MB / 59.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.74%               53.23MiB / 975.7MiB   5.46%               14.5MB / 2.44MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.08MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.92%              22.06MiB / 975.7MiB   2.26%               550kB / 301kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.88MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.98%              28.05MiB / 975.7MiB   2.87%               34.9MB / 60MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.64%               53.23MiB / 975.7MiB   5.46%               14.5MB / 2.44MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.93%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.08MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.70%              22.06MiB / 975.7MiB   2.26%               605kB / 330kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.88MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.34%              28.05MiB / 975.7MiB   2.88%               34.9MB / 60MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.37%               53.23MiB / 975.7MiB   5.46%               14.5MB / 2.44MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.08MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          11.71%              22.06MiB / 975.7MiB   2.26%               664kB / 361kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.77%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        19.98%              28.05MiB / 975.7MiB   2.88%               34.9MB / 60.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.46%               53.23MiB / 975.7MiB   5.46%               14.5MB / 2.45MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    4.33%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.50%              22.06MiB / 975.7MiB   2.26%               722kB / 392kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.58%              28.05MiB / 975.7MiB   2.88%               35MB / 60.1MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.55%               53.23MiB / 975.7MiB   5.46%               14.5MB / 2.45MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.93%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.31%              22.06MiB / 975.7MiB   2.26%               776kB / 420kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.19%              28.05MiB / 975.7MiB   2.88%               35MB / 60.2MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.47%               53.23MiB / 975.7MiB   5.46%               14.6MB / 2.45MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.92%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.92%              22.06MiB / 975.7MiB   2.26%               835kB / 451kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.02%              28.05MiB / 975.7MiB   2.88%               35MB / 60.2MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.59%               53.23MiB / 975.7MiB   5.46%               14.6MB / 2.46MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.83%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.10%              22.06MiB / 975.7MiB   2.26%               894kB / 482kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.47%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.09%              28.05MiB / 975.7MiB   2.88%               35.1MB / 60.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.77%               53.23MiB / 975.7MiB   5.46%               14.6MB / 2.46MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.49%              22.06MiB / 975.7MiB   2.26%               948kB / 511kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.02%              28.05MiB / 975.7MiB   2.88%               35.1MB / 60.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.34%               53.23MiB / 975.7MiB   5.46%               14.6MB / 2.46MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.05%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.21%              22.06MiB / 975.7MiB   2.26%               1.03MB / 553kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.47%              28.05MiB / 975.7MiB   2.88%               35.2MB / 60.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.63%               53.23MiB / 975.7MiB   5.46%               14.6MB / 2.46MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.97%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          18.69%              22.06MiB / 975.7MiB   2.26%               1.1MB / 589kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.79%              28.05MiB / 975.7MiB   2.88%               35.2MB / 60.5MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.86%               53.23MiB / 975.7MiB   5.46%               14.7MB / 2.47MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.90%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.87%              22.06MiB / 975.7MiB   2.26%               1.16MB / 625kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.30%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.46%              28.05MiB / 975.7MiB   2.88%               35.2MB / 60.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.61%               53.23MiB / 975.7MiB   5.46%               14.7MB / 2.47MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.81%              22.06MiB / 975.7MiB   2.26%               1.23MB / 658kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.86%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.80%              28.05MiB / 975.7MiB   2.88%               35.3MB / 60.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.52%               53.23MiB / 975.7MiB   5.46%               14.7MB / 2.47MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.90%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.06%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.39%              22.06MiB / 975.7MiB   2.26%               1.28MB / 689kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.88%              28.05MiB / 975.7MiB   2.88%               35.3MB / 60.7MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.66%               53.23MiB / 975.7MiB   5.46%               14.7MB / 2.47MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.46%              22.06MiB / 975.7MiB   2.26%               1.34MB / 718kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.48%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.19%              28.05MiB / 975.7MiB   2.88%               35.3MB / 60.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.55%               53.23MiB / 975.7MiB   5.46%               14.7MB / 2.48MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.88%               59.09MiB / 975.7MiB   6.06%               496kB / 299kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.90%              22.06MiB / 975.7MiB   2.26%               1.4MB / 748kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.31%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.20%              28.05MiB / 975.7MiB   2.88%               35.4MB / 60.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.77%               53.23MiB / 975.7MiB   5.46%               14.8MB / 2.48MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    3.18%               50.09MiB / 975.7MiB   5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.90%              22.05MiB / 975.7MiB   2.26%               1.45MB / 778kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.60%              28.05MiB / 975.7MiB   2.88%               35.4MB / 60.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.49%               53.23MiB / 975.7MiB   5.46%               14.8MB / 2.48MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    4.11%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.30%              22.05MiB / 975.7MiB   2.26%               1.52MB / 811kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.46%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.16%              28.05MiB / 975.7MiB   2.88%               35.4MB / 60.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.50%               53.23MiB / 975.7MiB   5.46%               14.8MB / 2.49MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.90%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          18.70%              22.05MiB / 975.7MiB   2.26%               1.6MB / 855kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.88%              28.05MiB / 975.7MiB   2.88%               35.5MB / 61MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.67%               53.23MiB / 975.7MiB   5.46%               14.8MB / 2.49MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.88%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.19%              22.05MiB / 975.7MiB   2.26%               1.66MB / 888kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.42%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.26%              28.05MiB / 975.7MiB   2.88%               35.5MB / 61.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          3.01%               53.23MiB / 975.7MiB   5.46%               14.8MB / 2.49MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.91%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.07%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          18.49%              22.05MiB / 975.7MiB   2.26%               1.74MB / 931kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.42%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.59%              28.05MiB / 975.7MiB   2.88%               35.6MB / 61.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.55%               53.23MiB / 975.7MiB   5.46%               14.8MB / 2.49MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.04%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.39%              22.05MiB / 975.7MiB   2.26%               1.8MB / 961kB       0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.72%              28.05MiB / 975.7MiB   2.88%               35.6MB / 61.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.48%               53.23MiB / 975.7MiB   5.46%               14.9MB / 2.5MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.83%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.33%              22.05MiB / 975.7MiB   2.26%               1.86MB / 992kB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.78%              28.05MiB / 975.7MiB   2.88%               35.6MB / 61.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.54%               53.23MiB / 975.7MiB   5.46%               14.9MB / 2.5MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.52%              22.05MiB / 975.7MiB   2.26%               1.92MB / 1.02MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.18%              28.05MiB / 975.7MiB   2.88%               35.7MB / 61.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.76%               53.23MiB / 975.7MiB   5.46%               14.9MB / 2.5MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.85%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          17.46%              22.05MiB / 975.7MiB   2.26%               1.98MB / 1.06MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        25.21%              28.05MiB / 975.7MiB   2.88%               35.7MB / 61.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.64%               53.23MiB / 975.7MiB   5.46%               14.9MB / 2.51MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          16.07%              22.05MiB / 975.7MiB   2.26%               2.05MB / 1.09MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.21%              28.05MiB / 975.7MiB   2.88%               35.7MB / 61.5MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.45%               53.23MiB / 975.7MiB   5.46%               14.9MB / 2.51MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.80%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          17.07%              22.05MiB / 975.7MiB   2.26%               2.11MB / 1.13MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.91%              28.05MiB / 975.7MiB   2.88%               35.8MB / 61.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.55%               53.23MiB / 975.7MiB   5.46%               15MB / 2.51MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.88%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.77%              22.05MiB / 975.7MiB   2.26%               2.19MB / 1.17MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.45%              28.05MiB / 975.7MiB   2.88%               35.8MB / 61.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.61%               53.23MiB / 975.7MiB   5.46%               15MB / 2.51MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.95%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.37%              22.05MiB / 975.7MiB   2.26%               2.25MB / 1.2MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.24%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.62%              28.05MiB / 975.7MiB   2.88%               35.8MB / 61.7MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.64%               53.23MiB / 975.7MiB   5.46%               15MB / 2.52MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.64%              22.05MiB / 975.7MiB   2.26%               2.31MB / 1.23MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.50%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        19.69%              28.05MiB / 975.7MiB   2.88%               35.9MB / 61.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.41%               53.23MiB / 975.7MiB   5.46%               15MB / 2.52MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    15.68%              50.11MiB / 975.7MiB   5.14%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          22.07%              22.05MiB / 975.7MiB   2.26%               2.39MB / 1.27MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        25.11%              28.05MiB / 975.7MiB   2.88%               35.9MB / 61.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.71%               53.23MiB / 975.7MiB   5.46%               15MB / 2.52MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.82%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          17.99%              22.05MiB / 975.7MiB   2.26%               2.46MB / 1.31MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.73MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.43%              28.05MiB / 975.7MiB   2.88%               36MB / 61.9MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.58%               53.23MiB / 975.7MiB   5.46%               15MB / 2.52MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.43%              22.05MiB / 975.7MiB   2.26%               2.51MB / 1.34MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.44%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.36%              28.05MiB / 975.7MiB   2.88%               36MB / 62MB         14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.64%               53.23MiB / 975.7MiB   5.46%               15.1MB / 2.53MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.90%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.96%              22.05MiB / 975.7MiB   2.26%               2.57MB / 1.37MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.41%              28.05MiB / 975.7MiB   2.88%               36MB / 62MB         14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.78%               53.23MiB / 975.7MiB   5.46%               15.1MB / 2.53MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.97%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          17.18%              22.05MiB / 975.7MiB   2.26%               2.64MB / 1.41MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.97%              28.05MiB / 975.7MiB   2.88%               36.1MB / 62.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.61%               53.23MiB / 975.7MiB   5.46%               15.1MB / 2.53MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.78%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.31%              22.05MiB / 975.7MiB   2.26%               2.7MB / 1.44MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.30%              28.05MiB / 975.7MiB   2.88%               36.1MB / 62.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.56%               53.23MiB / 975.7MiB   5.46%               15.1MB / 2.53MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.80%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.79%              22.05MiB / 975.7MiB   2.26%               2.76MB / 1.47MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.32%              28.05MiB / 975.7MiB   2.88%               36.1MB / 62.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.70%               53.23MiB / 975.7MiB   5.46%               15.1MB / 2.54MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.79%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.66%              22.05MiB / 975.7MiB   2.26%               2.82MB / 1.5MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.44%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.62%              28.05MiB / 975.7MiB   2.88%               36.2MB / 62.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.58%               53.23MiB / 975.7MiB   5.46%               15.2MB / 2.54MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.76%               59.09MiB / 975.7MiB   6.06%               499kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          11.78%              22.05MiB / 975.7MiB   2.26%               2.88MB / 1.54MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.58%              28.05MiB / 975.7MiB   2.88%               36.2MB / 62.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.67%               53.23MiB / 975.7MiB   5.46%               15.2MB / 2.54MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.93%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    4.16%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.84%               22.05MiB / 975.7MiB   2.26%               2.95MB / 1.57MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.41%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.05%              28.05MiB / 975.7MiB   2.88%               36.2MB / 62.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.34%               53.23MiB / 975.7MiB   5.46%               15.2MB / 2.55MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.83%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.18%               22.05MiB / 975.7MiB   2.26%               3.01MB / 1.6MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        21.56%              28.05MiB / 975.7MiB   2.88%               36.3MB / 62.5MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.42%               53.23MiB / 975.7MiB   5.46%               15.2MB / 2.55MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.82%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.66%               22.05MiB / 975.7MiB   2.26%               3.07MB / 1.64MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        21.35%              28.05MiB / 975.7MiB   2.88%               36.3MB / 62.5MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.36%               53.23MiB / 975.7MiB   5.46%               15.2MB / 2.55MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.17%              22.05MiB / 975.7MiB   2.26%               3.15MB / 1.68MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.60%              28.05MiB / 975.7MiB   2.88%               36.4MB / 62.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.38%               53.23MiB / 975.7MiB   5.46%               15.2MB / 2.55MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.82%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.81%               22.05MiB / 975.7MiB   2.26%               3.21MB / 1.71MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.72%              28.05MiB / 975.7MiB   2.88%               36.4MB / 62.7MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.50%               53.23MiB / 975.7MiB   5.46%               15.3MB / 2.56MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.82%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.04%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.44%              22.05MiB / 975.7MiB   2.26%               3.27MB / 1.74MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.85%              28.05MiB / 975.7MiB   2.88%               36.4MB / 62.7MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.63%               53.23MiB / 975.7MiB   5.46%               15.3MB / 2.56MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.83%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.70%               22.05MiB / 975.7MiB   2.26%               3.33MB / 1.77MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.71%              28.05MiB / 975.7MiB   2.88%               36.5MB / 62.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          3.00%               53.23MiB / 975.7MiB   5.46%               15.3MB / 2.56MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.92%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.39%              22.05MiB / 975.7MiB   2.26%               3.4MB / 1.81MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.74%              28.05MiB / 975.7MiB   2.88%               36.5MB / 62.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.65%               53.23MiB / 975.7MiB   5.46%               15.3MB / 2.56MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.85%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.91%               22.05MiB / 975.7MiB   2.26%               3.45MB / 1.84MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.23%              28.05MiB / 975.7MiB   2.88%               36.5MB / 62.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.51%               53.23MiB / 975.7MiB   5.46%               15.3MB / 2.57MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.82%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.01%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.63%              22.05MiB / 975.7MiB   2.26%               3.51MB / 1.87MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.31%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.02%              28.05MiB / 975.7MiB   2.88%               36.6MB / 63MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.92%               53.23MiB / 975.7MiB   5.46%               15.3MB / 2.57MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          11.54%              22.05MiB / 975.7MiB   2.26%               3.58MB / 1.91MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.22%              28.06MiB / 975.7MiB   2.88%               36.6MB / 63.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.55%               53.23MiB / 975.7MiB   5.46%               15.4MB / 2.57MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.45%               22.05MiB / 975.7MiB   2.26%               3.64MB / 1.94MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.09%              28.06MiB / 975.7MiB   2.88%               36.6MB / 63.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.45%               53.23MiB / 975.7MiB   5.46%               15.4MB / 2.58MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.81%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.54%               22.05MiB / 975.7MiB   2.26%               3.69MB / 1.97MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.29%              28.06MiB / 975.7MiB   2.88%               36.7MB / 63.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.45%               53.23MiB / 975.7MiB   5.46%               15.4MB / 2.58MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.92%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.08%              22.05MiB / 975.7MiB   2.26%               3.76MB / 2MB        0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.94%              28.06MiB / 975.7MiB   2.88%               36.7MB / 63.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.48%               53.23MiB / 975.7MiB   5.46%               15.4MB / 2.58MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          8.95%               22.05MiB / 975.7MiB   2.26%               3.82MB / 2.03MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.34%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        21.34%              28.06MiB / 975.7MiB   2.88%               36.7MB / 63.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.43%               53.23MiB / 975.7MiB   5.46%               15.4MB / 2.58MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.81%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.01%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.55%               22.05MiB / 975.7MiB   2.26%               3.89MB / 2.07MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.32%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.88%              28.06MiB / 975.7MiB   2.88%               36.8MB / 63.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.65%               53.23MiB / 975.7MiB   5.46%               15.5MB / 2.59MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.85%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.06%               22.05MiB / 975.7MiB   2.26%               3.95MB / 2.1MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.90%              28.06MiB / 975.7MiB   2.88%               36.8MB / 63.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.57%               53.23MiB / 975.7MiB   5.46%               15.5MB / 2.59MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.79%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.11%              22.05MiB / 975.7MiB   2.26%               4.03MB / 2.14MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.90%              28.06MiB / 975.7MiB   2.88%               36.9MB / 63.5MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.54%               53.23MiB / 975.7MiB   5.46%               15.5MB / 2.59MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.81%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.72%               22.05MiB / 975.7MiB   2.26%               4.08MB / 2.17MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.77%              28.06MiB / 975.7MiB   2.88%               36.9MB / 63.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.80%               53.23MiB / 975.7MiB   5.46%               15.5MB / 2.59MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.33%               22.05MiB / 975.7MiB   2.26%               4.14MB / 2.2MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.35%              28.06MiB / 975.7MiB   2.88%               36.9MB / 63.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.45%               53.23MiB / 975.7MiB   5.46%               15.5MB / 2.6MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.81%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.51%              22.05MiB / 975.7MiB   2.26%               4.19MB / 2.23MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.69%              28.06MiB / 975.7MiB   2.88%               37MB / 63.7MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.74%               53.23MiB / 975.7MiB   5.46%               15.5MB / 2.6MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.85%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.37%              22.05MiB / 975.7MiB   2.26%               4.27MB / 2.27MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.48%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.62%              28.06MiB / 975.7MiB   2.88%               37MB / 63.8MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.46%               53.23MiB / 975.7MiB   5.46%               15.6MB / 2.6MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.92%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.01%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          8.98%               22.05MiB / 975.7MiB   2.26%               4.33MB / 2.3MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.94%              28.06MiB / 975.7MiB   2.88%               37MB / 63.8MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.43%               53.23MiB / 975.7MiB   5.46%               15.6MB / 2.6MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.58%               22.05MiB / 975.7MiB   2.26%               4.39MB / 2.33MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.25%              28.06MiB / 975.7MiB   2.88%               37.1MB / 63.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.33%               53.23MiB / 975.7MiB   5.46%               15.6MB / 2.61MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.79%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.75%               22.05MiB / 975.7MiB   2.26%               4.45MB / 2.36MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.42%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.16%              28.06MiB / 975.7MiB   2.88%               37.1MB / 63.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.24%               53.23MiB / 975.7MiB   5.46%               15.6MB / 2.61MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.79%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.67%               22.05MiB / 975.7MiB   2.26%               4.5MB / 2.39MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.23%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        21.85%              28.06MiB / 975.7MiB   2.88%               37.1MB / 64MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.37%               53.23MiB / 975.7MiB   5.46%               15.6MB / 2.61MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.64%               22.05MiB / 975.7MiB   2.26%               4.57MB / 2.43MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.06%              28.06MiB / 975.7MiB   2.88%               37.2MB / 64.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.68%               53.23MiB / 975.7MiB   5.46%               15.7MB / 2.62MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.88%              22.05MiB / 975.7MiB   2.26%               4.66MB / 2.48MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        25.74%              28.06MiB / 975.7MiB   2.88%               37.2MB / 64.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.42%               53.23MiB / 975.7MiB   5.46%               15.7MB / 2.62MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.20%              22.05MiB / 975.7MiB   2.26%               4.72MB / 2.51MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.00%              28.06MiB / 975.7MiB   2.88%               37.3MB / 64.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.55%               53.23MiB / 975.7MiB   5.46%               15.7MB / 2.62MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.81%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.12%              22.05MiB / 975.7MiB   2.26%               4.8MB / 2.55MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.65%              28.06MiB / 975.7MiB   2.88%               37.3MB / 64.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.45%               53.23MiB / 975.7MiB   5.46%               15.7MB / 2.62MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               501kB / 301kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.84%               22.05MiB / 975.7MiB   2.26%               4.86MB / 2.58MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.76%              28.06MiB / 975.7MiB   2.88%               37.3MB / 64.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.60%               53.23MiB / 975.7MiB   5.46%               15.7MB / 2.63MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.91%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.52%              22.05MiB / 975.7MiB   2.26%               4.93MB / 2.62MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.69%              28.06MiB / 975.7MiB   2.88%               37.4MB / 64.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.52%               53.23MiB / 975.7MiB   5.46%               15.7MB / 2.63MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.83%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.08%              22.05MiB / 975.7MiB   2.26%               4.99MB / 2.66MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.38%              28.06MiB / 975.7MiB   2.88%               37.4MB / 64.5MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.42%               53.23MiB / 975.7MiB   5.46%               15.8MB / 2.63MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.35%              22.05MiB / 975.7MiB   2.26%               5.07MB / 2.69MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.34%              28.06MiB / 975.7MiB   2.88%               37.5MB / 64.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.63%               53.23MiB / 975.7MiB   5.46%               15.8MB / 2.63MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.78%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.15%              22.05MiB / 975.7MiB   2.26%               5.13MB / 2.73MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.62%              28.06MiB / 975.7MiB   2.88%               37.5MB / 64.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.46%               53.23MiB / 975.7MiB   5.46%               15.8MB / 2.64MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.01%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.28%               22.05MiB / 975.7MiB   2.26%               5.2MB / 2.76MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.05%              28.06MiB / 975.7MiB   2.88%               37.5MB / 64.7MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.85%               53.23MiB / 975.7MiB   5.46%               15.8MB / 2.64MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.93%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.48%              22.05MiB / 975.7MiB   2.26%               5.27MB / 2.81MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.61%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.49%              28.06MiB / 975.7MiB   2.88%               37.6MB / 64.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.48%               53.23MiB / 975.7MiB   5.46%               15.8MB / 2.64MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.82%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.03%              22.05MiB / 975.7MiB   2.26%               5.33MB / 2.83MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.27%              28.06MiB / 975.7MiB   2.88%               37.6MB / 64.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.50%               53.23MiB / 975.7MiB   5.46%               15.8MB / 2.64MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.94%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.45%              22.05MiB / 975.7MiB   2.26%               5.39MB / 2.87MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.31%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.09%              28.06MiB / 975.7MiB   2.88%               37.6MB / 64.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.74%               53.23MiB / 975.7MiB   5.46%               15.9MB / 2.65MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.88%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.02%              22.05MiB / 975.7MiB   2.26%               5.45MB / 2.9MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.44%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.28%              28.06MiB / 975.7MiB   2.88%               37.7MB / 65MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.60%               53.23MiB / 975.7MiB   5.46%               15.9MB / 2.65MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.92%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.74%               22.05MiB / 975.7MiB   2.26%               5.52MB / 2.93MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.37%              28.06MiB / 975.7MiB   2.88%               37.7MB / 65MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.44%               53.23MiB / 975.7MiB   5.46%               15.9MB / 2.65MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.53%              22.05MiB / 975.7MiB   2.26%               5.59MB / 2.97MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.75%              28.06MiB / 975.7MiB   2.88%               37.8MB / 65.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.62%               53.23MiB / 975.7MiB   5.46%               15.9MB / 2.66MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.92%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.42%              22.05MiB / 975.7MiB   2.26%               5.66MB / 3.01MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.59%              28.06MiB / 975.7MiB   2.88%               37.8MB / 65.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.50%               53.23MiB / 975.7MiB   5.46%               15.9MB / 2.66MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.90%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.72%               22.05MiB / 975.7MiB   2.26%               5.73MB / 3.05MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.24%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.20%              28.06MiB / 975.7MiB   2.88%               37.8MB / 65.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.47%               53.23MiB / 975.7MiB   5.46%               16MB / 2.66MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          16.00%              22.05MiB / 975.7MiB   2.26%               5.81MB / 3.09MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.41%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.87%              28.06MiB / 975.7MiB   2.88%               37.9MB / 65.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.43%               53.23MiB / 975.7MiB   5.46%               16MB / 2.66MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.85%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.54%               22.05MiB / 975.7MiB   2.26%               5.87MB / 3.12MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        21.76%              28.06MiB / 975.7MiB   2.88%               37.9MB / 65.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.35%               53.23MiB / 975.7MiB   5.46%               16MB / 2.67MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.88%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.01%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.84%               22.05MiB / 975.7MiB   2.26%               5.93MB / 3.16MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.26%              28.06MiB / 975.7MiB   2.88%               37.9MB / 65.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.35%               53.23MiB / 975.7MiB   5.46%               16MB / 2.67MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.06%              22.05MiB / 975.7MiB   2.26%               6.02MB / 3.2MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.43%              28.06MiB / 975.7MiB   2.88%               38MB / 65.5MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.73%               53.23MiB / 975.7MiB   5.46%               16MB / 2.67MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.12%              22.05MiB / 975.7MiB   2.26%               6.09MB / 3.24MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.24%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.73%              28.06MiB / 975.7MiB   2.88%               38MB / 65.6MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.51%               53.23MiB / 975.7MiB   5.46%               16MB / 2.67MB       65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.09%              22.05MiB / 975.7MiB   2.26%               6.16MB / 3.28MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.30%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.82%              28.06MiB / 975.7MiB   2.88%               38.1MB / 65.7MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.47%               53.23MiB / 975.7MiB   5.46%               16.1MB / 2.68MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.01%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.37%              22.05MiB / 975.7MiB   2.26%               6.23MB / 3.31MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.30%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.31%              28.06MiB / 975.7MiB   2.88%               38.1MB / 65.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.83%               53.23MiB / 975.7MiB   5.46%               16.1MB / 2.68MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.91%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.74%               22.05MiB / 975.7MiB   2.26%               6.29MB / 3.35MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        20.43%              28.06MiB / 975.7MiB   2.88%               38.2MB / 65.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.38%               53.23MiB / 975.7MiB   5.46%               16.1MB / 2.68MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.79%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.20%              22.05MiB / 975.7MiB   2.26%               6.35MB / 3.38MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.03%              28.06MiB / 975.7MiB   2.88%               38.2MB / 65.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.40%               53.23MiB / 975.7MiB   5.46%               16.1MB / 2.68MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.94%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.05%              22.05MiB / 975.7MiB   2.26%               6.42MB / 3.42MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.31%              28.06MiB / 975.7MiB   2.88%               38.2MB / 65.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.77%               53.23MiB / 975.7MiB   5.46%               16.1MB / 2.69MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.12%               22.05MiB / 975.7MiB   2.26%               6.48MB / 3.45MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        21.76%              28.06MiB / 975.7MiB   2.88%               38.3MB / 66MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.31%               53.23MiB / 975.7MiB   5.46%               16.2MB / 2.69MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.36%              22.05MiB / 975.7MiB   2.26%               6.55MB / 3.48MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.65%              28.06MiB / 975.7MiB   2.88%               38.3MB / 66.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.54%               53.23MiB / 975.7MiB   5.46%               16.2MB / 2.69MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.90%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.03%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.01%              22.05MiB / 975.7MiB   2.26%               6.62MB / 3.52MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.74%              28.06MiB / 975.7MiB   2.88%               38.3MB / 66.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.41%               53.23MiB / 975.7MiB   5.46%               16.2MB / 2.69MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.07%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.11%              22.05MiB / 975.7MiB   2.26%               6.69MB / 3.56MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.78%              28.06MiB / 975.7MiB   2.88%               38.4MB / 66.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.38%               53.23MiB / 975.7MiB   5.46%               16.2MB / 2.7MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.82%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.07%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.01%               22.05MiB / 975.7MiB   2.26%               6.75MB / 3.59MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.11%              28.06MiB / 975.7MiB   2.88%               38.4MB / 66.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.47%               53.23MiB / 975.7MiB   5.46%               16.2MB / 2.7MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.85%               22.05MiB / 975.7MiB   2.26%               6.81MB / 3.62MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.53%              28.06MiB / 975.7MiB   2.88%               38.4MB / 66.3MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.40%               53.23MiB / 975.7MiB   5.46%               16.2MB / 2.7MB      65.8MB / 0B         0
-4385367a41dd        master_1_1          0.84%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.06%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          13.28%              22.05MiB / 975.7MiB   2.26%               6.88MB / 3.66MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.41%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.30%              28.06MiB / 975.7MiB   2.88%               38.5MB / 66.4MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.60%               53.23MiB / 975.7MiB   5.46%               16.3MB / 2.71MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.14%              22.05MiB / 975.7MiB   2.26%               6.95MB / 3.69MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.91%              28.06MiB / 975.7MiB   2.88%               38.5MB / 66.5MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.51%               53.23MiB / 975.7MiB   5.46%               16.3MB / 2.71MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.83%               59.09MiB / 975.7MiB   6.06%               502kB / 302kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.86%               22.05MiB / 975.7MiB   2.26%               7.02MB / 3.73MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.01%              28.06MiB / 975.7MiB   2.88%               38.6MB / 66.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.63%               53.23MiB / 975.7MiB   5.46%               16.3MB / 2.71MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.89%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.70%              22.05MiB / 975.7MiB   2.26%               7.1MB / 3.78MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.43%              28.06MiB / 975.7MiB   2.88%               38.6MB / 66.6MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.54%               53.23MiB / 975.7MiB   5.46%               16.3MB / 2.71MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.64%              22.05MiB / 975.7MiB   2.26%               7.19MB / 3.83MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.25%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        25.07%              28.06MiB / 975.7MiB   2.88%               38.7MB / 66.7MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.61%               53.23MiB / 975.7MiB   5.46%               16.3MB / 2.72MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.90%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.16%               22.05MiB / 975.7MiB   2.26%               7.25MB / 3.86MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        21.94%              28.06MiB / 975.7MiB   2.88%               38.7MB / 66.8MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.84%               53.23MiB / 975.7MiB   5.46%               16.4MB / 2.72MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.96%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          14.47%              22.05MiB / 975.7MiB   2.26%               7.33MB / 3.9MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.34%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.54%              28.06MiB / 975.7MiB   2.88%               38.7MB / 66.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.66%               53.23MiB / 975.7MiB   5.46%               16.4MB / 2.72MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.94%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.14%              22.05MiB / 975.7MiB   2.26%               7.39MB / 3.93MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.48%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.80%              28.06MiB / 975.7MiB   2.88%               38.8MB / 66.9MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.63%               53.23MiB / 975.7MiB   5.46%               16.4MB / 2.72MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.72%               22.05MiB / 975.7MiB   2.26%               7.45MB / 3.96MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.29%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.71MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.52%              28.06MiB / 975.7MiB   2.88%               38.8MB / 67MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.64%               53.23MiB / 975.7MiB   5.46%               16.4MB / 2.73MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.83%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          9.99%               22.05MiB / 975.7MiB   2.26%               7.52MB / 4MB        0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.26%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.72MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        22.56%              28.06MiB / 975.7MiB   2.88%               38.8MB / 67.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.53%               53.23MiB / 975.7MiB   5.46%               16.4MB / 2.73MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          12.07%              22.05MiB / 975.7MiB   2.26%               7.58MB / 4.03MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.46%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.72MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        24.32%              28.06MiB / 975.7MiB   2.88%               38.9MB / 67.1MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.66%               53.23MiB / 975.7MiB   5.46%               16.4MB / 2.73MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.90%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          11.22%              22.05MiB / 975.7MiB   2.26%               7.64MB / 4.06MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.28%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.72MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.86%              28.06MiB / 975.7MiB   2.88%               38.9MB / 67.2MB     14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.78%               53.23MiB / 975.7MiB   5.46%               16.5MB / 2.73MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.92%               59.09MiB / 975.7MiB   6.06%               502kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          10.29%              22.05MiB / 975.7MiB   2.26%               7.71MB / 4.1MB      0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.27%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.72MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        23.84%              28.06MiB / 975.7MiB   2.88%               39MB / 67.3MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.65%               53.23MiB / 975.7MiB   5.46%               16.5MB / 2.74MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.86%               59.09MiB / 975.7MiB   6.06%               503kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
-CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-dea301d18e65        python_5_1          15.85%              22.05MiB / 975.7MiB   2.26%               7.79MB / 4.14MB     0B / 0B             0
-9424ed1b8b8b        comm_3_1            0.32%               24.89MiB / 975.7MiB   2.55%               1.74MB / 1.72MB     21.8MB / 0B         0
-74cb2e57befc        hwbridge_4_1        25.01%              28.06MiB / 975.7MiB   2.88%               39MB / 67.3MB       14MB / 0B           0
-b9e1627c2290        mavros_2_1          2.51%               53.23MiB / 975.7MiB   5.46%               16.5MB / 2.74MB     65.8MB / 0B         0
-4385367a41dd        master_1_1          0.87%               59.09MiB / 975.7MiB   6.06%               503kB / 303kB       49.9MB / 8.19kB     0
-d1de42f0a768        resin_supervisor    0.02%               50.1MiB / 975.7MiB    5.13%               0B / 0B             53.7MB / 98.3kB     0
+1147e93059d8        python_5_1          0.90%               21.95MiB / 975.7MiB   2.25%               30.4kB / 28.1kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.15%               28.75MiB / 975.7MiB   2.95%               2.56MB / 1.74MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.30%               23.58MiB / 975.7MiB   2.42%               276kB / 277kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          3.16%               59.01MiB / 975.7MiB   6.05%               16.5MB / 2.72MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.18%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    11.41%              49.96MiB / 975.7MiB   5.12%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.75%               21.95MiB / 975.7MiB   2.25%               31.7kB / 28.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.96%               28.75MiB / 975.7MiB   2.95%               2.56MB / 1.74MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.30%               23.58MiB / 975.7MiB   2.42%               276kB / 277kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.75%               59.01MiB / 975.7MiB   6.05%               16.5MB / 2.72MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.06%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.84MiB / 975.7MiB   5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.10%               21.95MiB / 975.7MiB   2.25%               33.7kB / 30kB       0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.95%               28.75MiB / 975.7MiB   2.95%               2.56MB / 1.75MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.29%               23.58MiB / 975.7MiB   2.42%               276kB / 277kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          3.05%               59.01MiB / 975.7MiB   6.05%               16.5MB / 2.73MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.94%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.84MiB / 975.7MiB   5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.94%               21.95MiB / 975.7MiB   2.25%               36kB / 31.3kB       0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.11%               28.75MiB / 975.7MiB   2.95%               2.57MB / 1.75MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.32%               23.58MiB / 975.7MiB   2.42%               276kB / 278kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          3.01%               59.01MiB / 975.7MiB   6.05%               16.6MB / 2.73MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.09%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    5.00%               49.84MiB / 975.7MiB   5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.88%               21.95MiB / 975.7MiB   2.25%               37.8kB / 32.3kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.20%               28.75MiB / 975.7MiB   2.95%               2.57MB / 1.75MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.33%               23.58MiB / 975.7MiB   2.42%               277kB / 279kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.90%               59.01MiB / 975.7MiB   6.05%               16.6MB / 2.73MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.00%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.07%               49.84MiB / 975.7MiB   5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.05%               21.95MiB / 975.7MiB   2.25%               39.8kB / 33.3kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.25%               28.75MiB / 975.7MiB   2.95%               2.57MB / 1.76MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.32%               23.58MiB / 975.7MiB   2.42%               277kB / 279kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          3.18%               59.01MiB / 975.7MiB   6.05%               16.6MB / 2.73MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.95%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.84MiB / 975.7MiB   5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.71%               21.95MiB / 975.7MiB   2.25%               41.2kB / 34.1kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.64%               28.75MiB / 975.7MiB   2.95%               2.58MB / 1.76MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.27%               23.58MiB / 975.7MiB   2.42%               277kB / 279kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.47%               59.01MiB / 975.7MiB   6.05%               16.6MB / 2.74MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.94%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.84MiB / 975.7MiB   5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.94%               21.95MiB / 975.7MiB   2.25%               43.1kB / 35.1kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.93%               28.75MiB / 975.7MiB   2.95%               2.58MB / 1.76MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.30%               23.58MiB / 975.7MiB   2.42%               277kB / 279kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.82%               59.01MiB / 975.7MiB   6.05%               16.6MB / 2.74MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.07%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.84MiB / 975.7MiB   5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.38%               21.95MiB / 975.7MiB   2.25%               45.6kB / 36.5kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.44%               28.75MiB / 975.7MiB   2.95%               2.58MB / 1.77MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.95%               23.58MiB / 975.7MiB   2.42%               277kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          3.40%               59.01MiB / 975.7MiB   6.05%               16.6MB / 2.74MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.04%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    11.49%              50MiB / 975.7MiB      5.12%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.09%               21.95MiB / 975.7MiB   2.25%               47.7kB / 37.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.97%               28.75MiB / 975.7MiB   2.95%               2.59MB / 1.77MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.51%               23.58MiB / 975.7MiB   2.42%               278kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.68%               59.01MiB / 975.7MiB   6.05%               16.7MB / 2.75MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.98%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.07%               21.95MiB / 975.7MiB   2.25%               49.8kB / 38.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.86%               28.75MiB / 975.7MiB   2.95%               2.59MB / 1.77MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.37%               23.58MiB / 975.7MiB   2.42%               278kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.63%               59.01MiB / 975.7MiB   6.05%               16.7MB / 2.75MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.95%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.09%               49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.99%               21.95MiB / 975.7MiB   2.25%               52kB / 40kB         0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.99%               28.75MiB / 975.7MiB   2.95%               2.59MB / 1.78MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.30%               23.58MiB / 975.7MiB   2.42%               278kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.82%               59.01MiB / 975.7MiB   6.05%               16.7MB / 2.75MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.96%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.07%               49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.93%               21.95MiB / 975.7MiB   2.25%               53.6kB / 40.9kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.01%               28.75MiB / 975.7MiB   2.95%               2.6MB / 1.78MB      3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.29%               23.58MiB / 975.7MiB   2.42%               278kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.78%               59.01MiB / 975.7MiB   6.05%               16.7MB / 2.75MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.15%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.85%               21.95MiB / 975.7MiB   2.25%               55kB / 41.7kB       0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.93%               28.75MiB / 975.7MiB   2.95%               2.6MB / 1.78MB      3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.32%               23.58MiB / 975.7MiB   2.42%               278kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          3.13%               59.01MiB / 975.7MiB   6.05%               16.7MB / 2.76MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.98%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.18%               21.95MiB / 975.7MiB   2.25%               56.9kB / 42.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.82%               28.75MiB / 975.7MiB   2.95%               2.61MB / 1.79MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.28%               23.58MiB / 975.7MiB   2.42%               278kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          3.08%               59.01MiB / 975.7MiB   6.05%               16.8MB / 2.76MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.94%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.65%               21.95MiB / 975.7MiB   2.25%               58.3kB / 43.5kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.71%               28.75MiB / 975.7MiB   2.95%               2.61MB / 1.79MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.33%               23.58MiB / 975.7MiB   2.42%               278kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.39%               59.01MiB / 975.7MiB   6.05%               16.8MB / 2.76MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.90%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.91%               21.95MiB / 975.7MiB   2.25%               59.8kB / 44.3kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.88%               28.75MiB / 975.7MiB   2.95%               2.61MB / 1.79MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.33%               23.58MiB / 975.7MiB   2.42%               278kB / 280kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.65%               59.01MiB / 975.7MiB   6.05%               16.8MB / 2.76MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.93%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.19%               21.95MiB / 975.7MiB   2.25%               61.8kB / 45.5kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.01%               28.75MiB / 975.7MiB   2.95%               2.62MB / 1.79MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.81%               23.58MiB / 975.7MiB   2.42%               278kB / 281kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          3.21%               59.01MiB / 975.7MiB   6.05%               16.8MB / 2.77MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.98%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    10.02%              49.9MiB / 975.7MiB    5.11%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.90%               21.95MiB / 975.7MiB   2.25%               63.4kB / 46.3kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.95%               28.75MiB / 975.7MiB   2.95%               2.62MB / 1.8MB      3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.31%               23.58MiB / 975.7MiB   2.42%               278kB / 281kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.77%               59.01MiB / 975.7MiB   6.05%               16.8MB / 2.77MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.09%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.02MiB / 975.7MiB   5.13%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.88%               21.95MiB / 975.7MiB   2.25%               65kB / 47.2kB       0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.96%               28.75MiB / 975.7MiB   2.95%               2.62MB / 1.8MB      3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.31%               23.58MiB / 975.7MiB   2.42%               278kB / 281kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.79%               59.01MiB / 975.7MiB   6.05%               16.9MB / 2.77MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.02%               59.59MiB / 975.7MiB   6.11%               691kB / 364kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               49.91MiB / 975.7MiB   5.12%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.17%               21.95MiB / 975.7MiB   2.25%               67.4kB / 48.5kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.12%               28.75MiB / 975.7MiB   2.95%               2.63MB / 1.81MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.32%               23.58MiB / 975.7MiB   2.42%               278kB / 281kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.73%               59.01MiB / 975.7MiB   6.05%               16.9MB / 2.78MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.96%               59.59MiB / 975.7MiB   6.11%               694kB / 365kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    6.79%               49.93MiB / 975.7MiB   5.12%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.22%               21.95MiB / 975.7MiB   2.25%               69.2kB / 49.6kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.98%               28.75MiB / 975.7MiB   2.95%               2.63MB / 1.81MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.88%               23.58MiB / 975.7MiB   2.42%               279kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.75%               59.01MiB / 975.7MiB   6.05%               16.9MB / 2.78MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.04%               59.59MiB / 975.7MiB   6.11%               694kB / 365kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    13.59%              50.18MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.88%               21.95MiB / 975.7MiB   2.25%               70.7kB / 50.4kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.86%               28.75MiB / 975.7MiB   2.95%               2.63MB / 1.81MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.31%               23.58MiB / 975.7MiB   2.42%               279kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.73%               59.01MiB / 975.7MiB   6.05%               16.9MB / 2.78MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.01%               59.59MiB / 975.7MiB   6.11%               694kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.04%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.00%               21.95MiB / 975.7MiB   2.25%               72.5kB / 51.3kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.05%               28.75MiB / 975.7MiB   2.95%               2.64MB / 1.81MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.28%               23.58MiB / 975.7MiB   2.42%               279kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.84%               59.01MiB / 975.7MiB   6.05%               16.9MB / 2.79MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.97%               59.59MiB / 975.7MiB   6.11%               694kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.74%               21.95MiB / 975.7MiB   2.25%               73.9kB / 52.1kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.66%               28.75MiB / 975.7MiB   2.95%               2.64MB / 1.82MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.27%               23.58MiB / 975.7MiB   2.42%               279kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.56%               59.01MiB / 975.7MiB   6.05%               16.9MB / 2.79MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.89%               59.59MiB / 975.7MiB   6.11%               694kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.89%               21.95MiB / 975.7MiB   2.25%               75.4kB / 52.9kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.63%               28.75MiB / 975.7MiB   2.95%               2.64MB / 1.82MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.33%               23.58MiB / 975.7MiB   2.42%               279kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.78%               59.01MiB / 975.7MiB   6.05%               17MB / 2.79MB       97MB / 0B           0
+cfe92d1892a3        master_1_1          0.95%               59.59MiB / 975.7MiB   6.11%               694kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.98%               21.95MiB / 975.7MiB   2.25%               77.4kB / 53.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.16%               28.75MiB / 975.7MiB   2.95%               2.65MB / 1.82MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.28%               23.58MiB / 975.7MiB   2.42%               279kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.84%               59.01MiB / 975.7MiB   6.05%               17MB / 2.79MB       97MB / 0B           0
+cfe92d1892a3        master_1_1          0.95%               59.59MiB / 975.7MiB   6.11%               694kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.25%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          1.02%               21.95MiB / 975.7MiB   2.25%               79.3kB / 54.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.79%               28.74MiB / 975.7MiB   2.95%               2.65MB / 1.83MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.31%               23.57MiB / 975.7MiB   2.42%               279kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.68%               59.01MiB / 975.7MiB   6.05%               17MB / 2.8MB        97MB / 0B           0
+cfe92d1892a3        master_1_1          1.04%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.73%               21.95MiB / 975.7MiB   2.25%               80.8kB / 55.6kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.57%               28.74MiB / 975.7MiB   2.95%               2.65MB / 1.83MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.30%               23.57MiB / 975.7MiB   2.42%               279kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.59%               59.01MiB / 975.7MiB   6.05%               17MB / 2.8MB        97MB / 0B           0
+cfe92d1892a3        master_1_1          1.02%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.94%               21.95MiB / 975.7MiB   2.25%               82.4kB / 56.5kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.70%               28.74MiB / 975.7MiB   2.95%               2.66MB / 1.83MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.29%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.97%               59.01MiB / 975.7MiB   6.05%               17MB / 2.8MB        97MB / 0B           0
+cfe92d1892a3        master_1_1          0.97%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.74%               21.95MiB / 975.7MiB   2.25%               83.4kB / 57.1kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.83%               28.74MiB / 975.7MiB   2.95%               2.66MB / 1.83MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.31%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.66%               59.01MiB / 975.7MiB   6.05%               17.1MB / 2.8MB      97MB / 0B           0
+cfe92d1892a3        master_1_1          0.99%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.63%               21.95MiB / 975.7MiB   2.25%               84.5kB / 57.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.57%               28.74MiB / 975.7MiB   2.95%               2.66MB / 1.84MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.31%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.57%               59.01MiB / 975.7MiB   6.05%               17.1MB / 2.81MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.98%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.06%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.65%               21.95MiB / 975.7MiB   2.25%               85.5kB / 58.3kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.58%               28.74MiB / 975.7MiB   2.95%               2.67MB / 1.84MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.30%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.87%               59.01MiB / 975.7MiB   6.05%               17.1MB / 2.81MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.02%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.76%               21.95MiB / 975.7MiB   2.25%               86.4kB / 58.9kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.60%               28.74MiB / 975.7MiB   2.95%               2.67MB / 1.84MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.36%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.73%               59.01MiB / 975.7MiB   6.05%               17.1MB / 2.81MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.03%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.74%               21.95MiB / 975.7MiB   2.25%               87.6kB / 59.5kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.60%               28.74MiB / 975.7MiB   2.95%               2.67MB / 1.84MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.32%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.61%               59.01MiB / 975.7MiB   6.05%               17.1MB / 2.81MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.99%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.80%               21.95MiB / 975.7MiB   2.25%               88.9kB / 60.3kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        2.02%               28.74MiB / 975.7MiB   2.95%               2.68MB / 1.85MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.32%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.91%               59.01MiB / 975.7MiB   6.05%               17.1MB / 2.82MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.05%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.67%               21.95MiB / 975.7MiB   2.25%               89.8kB / 60.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.57%               28.74MiB / 975.7MiB   2.95%               2.68MB / 1.85MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.31%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.78%               59.01MiB / 975.7MiB   6.05%               17.2MB / 2.82MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.03%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.03%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.63%               21.95MiB / 975.7MiB   2.25%               90.7kB / 61.3kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.49%               28.74MiB / 975.7MiB   2.95%               2.68MB / 1.85MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.29%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.88%               59.01MiB / 975.7MiB   6.05%               17.2MB / 2.82MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.01%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.01%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.84%               21.95MiB / 975.7MiB   2.25%               92.2kB / 62.2kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.93%               28.74MiB / 975.7MiB   2.95%               2.69MB / 1.85MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.29%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.65%               59.01MiB / 975.7MiB   6.05%               17.2MB / 2.82MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.00%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.63%               21.95MiB / 975.7MiB   2.25%               93.2kB / 62.8kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.61%               28.74MiB / 975.7MiB   2.95%               2.69MB / 1.85MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.39%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.49%               59.01MiB / 975.7MiB   6.05%               17.2MB / 2.83MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.97%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.71%               21.95MiB / 975.7MiB   2.25%               94.4kB / 63.4kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.61%               28.74MiB / 975.7MiB   2.95%               2.69MB / 1.86MB     3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.28%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.61%               59.01MiB / 975.7MiB   6.05%               17.2MB / 2.83MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.98%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.02%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.67%               21.95MiB / 975.7MiB   2.25%               95.7kB / 64.2kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.73%               28.74MiB / 975.7MiB   2.95%               2.7MB / 1.86MB      3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.28%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.88%               59.01MiB / 975.7MiB   6.05%               17.2MB / 2.83MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          1.08%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.16%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1147e93059d8        python_5_1          0.58%               21.95MiB / 975.7MiB   2.25%               96.6kB / 64.7kB     0B / 0B             0
+b2e6bfd96d46        hwbridge_4_1        1.53%               28.74MiB / 975.7MiB   2.95%               2.7MB / 1.86MB      3.05MB / 0B         0
+b168af43f1ae        comm_3_1            0.31%               23.57MiB / 975.7MiB   2.42%               280kB / 282kB       0B / 0B             0
+68b2ef89e743        mavros_2_1          2.69%               59.01MiB / 975.7MiB   6.05%               17.3MB / 2.84MB     97MB / 0B           0
+cfe92d1892a3        master_1_1          0.98%               59.59MiB / 975.7MiB   6.11%               695kB / 366kB       45.6MB / 0B         0
+612e53e59fe1        resin_supervisor    0.18%               50.15MiB / 975.7MiB   5.14%               0B / 0B             55.1MB / 49.2kB     0
