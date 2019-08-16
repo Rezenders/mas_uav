@@ -75,3 +75,10 @@ $ balena push 150.162.53.68
 ```
 
 Note: 150.162.53.68 is the droneB board ip
+## Save data
+```
+$ while true; do balena stats -a --no-stream >> python_stats.csv; done
+```
+```
+$ while true; do balena stats -a --no-stream >> jason_stats.csv; done
+```
