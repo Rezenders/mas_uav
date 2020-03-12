@@ -24,9 +24,9 @@ params_type = float
 [setpoint]
 method = topic
 name = /mavros/setpoint_position/global
-msg_type = GlobalPositionTarget
-dependencies = mavros_msgs.msg
-params_name = latitude, longitude, altitude
+msg_type = GeoPoseStamped
+dependencies = geographic_msgs.msg
+params_name = pose.position.latitude, pose.position.longitude, pose.position.altitude
 params_type = float, float, float
 
 [land]
