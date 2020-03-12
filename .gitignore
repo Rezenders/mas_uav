@@ -1,3 +1,4 @@
+.gradle/
 .ipynb_checkpoints/
 .balena-sync.yml
 *.parm
