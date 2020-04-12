@@ -6,8 +6,8 @@
   </include>
 
   <node name="jason_hw_bridge" pkg="jason_hw_bridge" type="hw_bridge.py"
-    args="-a $(find mas_uav)/src/singleUAV/config/actions_manifest
-    -p $(find mas_uav)/src/singleUAV/config/perceptions_manifest"/>
+    args="-a $(find mas_uav)/config/actions_manifest
+    -p $(find mas_uav)/config/perceptions_manifest"/>
 
   <node name="python_agent" pkg="mas_uav" type="singleUAV.py"/>
 
