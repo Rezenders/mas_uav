@@ -3,7 +3,7 @@ import jason_msgs.msg
 from threading import Event
 from threading import RLock
 
-class RosJason:
+class AgArch:
     def __init__(self, my_name):
         self.action_event = Event()
         self.perception_event = Event()
