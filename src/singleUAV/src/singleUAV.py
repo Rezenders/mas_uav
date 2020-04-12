@@ -2,63 +2,63 @@
 import rospy
 import jason_msgs.msg
 import time
-from rosJason import *
+from pythonAgArch.pythonAgArch import *
 import signal
 
-def goToPos(rosj, lat, long, alt):
-    rosj.act("setpoint", [str(lat), str(long), str(alt)])
+def goToPos(agArch, lat, long, alt):
+    agArch.act("setpoint", [str(lat), str(long), str(alt)])
     tol = 0.00001
-    while abs(float(rosj.perceptions['global_pos'][0]) - lat) > tol or abs(
-            float(rosj.perceptions['global_pos'][1]) - long) > tol:
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+    while abs(float(agArch.perceptions['global_pos'][0]) - lat) > tol or abs(
+            float(agArch.perceptions['global_pos'][1]) - long) > tol:
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-def takeOff(rosj, alt):
-    rosj.act("takeoff", ["5"])
-    while 'altitude' not in rosj.perceptions:
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+def takeOff(agArch, alt):
+    agArch.act("takeoff", ["5"])
+    while 'altitude' not in agArch.perceptions:
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-    while abs(float(rosj.perceptions['altitude'][0]) - alt) > 0.1:
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+    while abs(float(agArch.perceptions['altitude'][0]) - alt) > 0.1:
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-def rtl(rosj):
-    rosj.act("set_mode", ["RTL"])
+def rtl(agArch):
+    agArch.act("set_mode", ["RTL"])
     tol = 0.00001
-    while abs(float(rosj.perceptions['global_pos'][0]) - float(rosj.perceptions['home_pos'][0])) > tol or abs(
-            float(rosj.perceptions['global_pos'][1]) - float(rosj.perceptions['home_pos'][1])) > tol or abs(float(rosj.perceptions['altitude'][0]) - 0) > 0.1:
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+    while abs(float(agArch.perceptions['global_pos'][0]) - float(agArch.perceptions['home_pos'][0])) > tol or abs(
+            float(agArch.perceptions['global_pos'][1]) - float(agArch.perceptions['home_pos'][1])) > tol or abs(float(agArch.perceptions['altitude'][0]) - 0) > 0.1:
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-def waitOnline(rosj):
-    while 'state' not in rosj.perceptions:
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+def waitOnline(agArch):
+    while 'state' not in agArch.perceptions:
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-    while rosj.perceptions['state'][1] == 'False':
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+    while agArch.perceptions['state'][1] == 'False':
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-def setModeGuided(rosj):
-    while 'state' not in rosj.perceptions:
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+def setModeGuided(agArch):
+    while 'state' not in agArch.perceptions:
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-    while rosj.perceptions['state'][0] != 'GUIDED':
-        rosj.act("set_mode", ["GUIDED"])
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+    while agArch.perceptions['state'][0] != 'GUIDED':
+        agArch.act("set_mode", ["GUIDED"])
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-def armMotor(rosj):
-    while 'state' not in rosj.perceptions:
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+def armMotor(agArch):
+    while 'state' not in agArch.perceptions:
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
-    while rosj.perceptions['state'][2] == 'False':
-        rosj.act("arm_motors", ["True"])
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
+    while agArch.perceptions['state'][2] == 'False':
+        agArch.act("arm_motors", ["True"])
+        agArch.perception_event.clear()
+        agArch.perception_event.wait()
 
 def main():
     print("Starting python Agent node.")
@@ -66,15 +66,15 @@ def main():
     signal.signal(signal.SIGINT, signal.SIG_DFL)
 
     my_name = 'uav'
-    rosj = RosJason(my_name)
+    agArch = AgArch(my_name)
 
-    waitOnline(rosj)
-    setModeGuided(rosj)
-    armMotor(rosj)
+    waitOnline(agArch)
+    setModeGuided(agArch)
+    armMotor(agArch)
 
-    takeOff(rosj, 5)
-    goToPos(rosj, -27.603683, -48.518052, 40)
-    rtl(rosj)
+    takeOff(agArch, 5)
+    goToPos(agArch, -27.603683, -48.518052, 40)
+    rtl(agArch)
 
 if __name__ == '__main__':
     main()
