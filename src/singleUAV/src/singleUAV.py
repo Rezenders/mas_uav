@@ -5,10 +5,7 @@ import time
 from rosJason import *
 import signal
 
-my_name = 'uav'
-rosj = RosJason(my_name)
-
-def goToPos(lat, long, alt):
+def goToPos(rosj, lat, long, alt):
     rosj.act("setpoint", [str(lat), str(long), str(alt)])
     tol = 0.00001
     while abs(float(rosj.perceptions['global_pos'][0]) - lat) > tol or abs(
@@ -16,7 +13,7 @@ def goToPos(lat, long, alt):
         rosj.perception_event.clear()
         rosj.perception_event.wait()
 
-def takeOff(alt):
+def takeOff(rosj, alt):
     rosj.act("takeoff", ["5"])
     while 'altitude' not in rosj.perceptions:
         rosj.perception_event.clear()
@@ -26,7 +23,7 @@ def takeOff(alt):
         rosj.perception_event.clear()
         rosj.perception_event.wait()
 
-def rtl():
+def rtl(rosj):
     rosj.act("set_mode", ["RTL"])
     tol = 0.00001
     while abs(float(rosj.perceptions['global_pos'][0]) - float(rosj.perceptions['home_pos'][0])) > tol or abs(
@@ -34,7 +31,7 @@ def rtl():
         rosj.perception_event.clear()
         rosj.perception_event.wait()
 
-def waitOnline():
+def waitOnline(rosj):
     while 'state' not in rosj.perceptions:
         rosj.perception_event.clear()
         rosj.perception_event.wait()
@@ -43,38 +40,41 @@ def waitOnline():
         rosj.perception_event.clear()
         rosj.perception_event.wait()
 
-def setModeGuided():
+def setModeGuided(rosj):
+    while 'state' not in rosj.perceptions:
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
+
+    while rosj.perceptions['state'][0] != 'GUIDED':
+        rosj.act("set_mode", ["GUIDED"])
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
+
+def armMotor(rosj):
     while 'state' not in rosj.perceptions:
         rosj.perception_event.clear()
         rosj.perception_event.wait()
 
     while rosj.perceptions['state'][2] == 'False':
-        rosj.act("set_mode", ["GUIDED"])
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
-
-def armMotor():
-    while 'state' not in rosj.perceptions:
-        rosj.perception_event.clear()
-        rosj.perception_event.wait()
-
-    while rosj.perceptions['state'][3] == 'False':
         rosj.act("arm_motors", ["True"])
         rosj.perception_event.clear()
         rosj.perception_event.wait()
 
 def main():
     print("Starting python Agent node.")
-    rospy.init_node('Agent')
+    rospy.init_node('Agent', log_level=rospy.INFO)
     signal.signal(signal.SIGINT, signal.SIG_DFL)
 
-    waitOnline()
-    setModeGuided()
-    armMotor()
+    my_name = 'uav'
+    rosj = RosJason(my_name)
 
-    takeOff(5)
-    goToPos(-27.603683, -48.518052, 40)
-    rtl()
+    waitOnline(rosj)
+    setModeGuided(rosj)
+    armMotor(rosj)
+
+    takeOff(rosj, 5)
+    goToPos(rosj, -27.603683, -48.518052, 40)
+    rtl(rosj)
 
 if __name__ == '__main__':
     main()
