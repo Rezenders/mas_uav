@@ -12,7 +12,7 @@
       output="screen"/>
 
     <node name="jason_agent" pkg="jason_ros" type="gradle_starter.sh"
-      args="$(find mas_uav)/src/multipleUAV/src/droneA/build.gradle">
+      args="$(find mas_uav)/src/coupleUAV/src/droneA/build.gradle">
     </node>
 
     <node name="jason_comm" pkg="jason_ros_comm" type="comm_udp.py" output="screen">
@@ -34,7 +34,7 @@
       output="screen"/>
 
     <node name="jason_agent" pkg="jason_ros" type="gradle_starter.sh"
-      args="$(find mas_uav)/src/multipleUAV/src/droneB/build.gradle">
+      args="$(find mas_uav)/src/coupleUAV/src/droneB/build.gradle">
     </node>
 
     <node name="jason_comm" pkg="jason_ros_comm" type="comm_udp.py" output="screen">
