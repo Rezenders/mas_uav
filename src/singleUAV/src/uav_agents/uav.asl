@@ -2,20 +2,28 @@
 
 +!fly : true <-
 	.print("Starting Jason Agent node.");
-	// .wait(state(_,"True",_,_));
+	.wait(state(_,"True",_));
 	!setMode("GUIDED");
 	!armMotor;
 	!takeOff(5);
 	!goToPos(-27.603683, -48.518052, 40);
 	!returnToLand.
 
-+!setMode(Mode)
++!setMode(Mode) : not state(Mode,_,_,_)
 	<- 	set_mode(Mode);
-			.wait(state(Mode,_,_,_)).
+			.wait(state(Mode,_,_), 1000).
 
-+!armMotor
-	<-  arm_motors(True);
-			.wait(state(Mode,_,_,"True")).
++!setMode(Mode).
+
+-!setMode(Mode) <- !setMode(Mode).
+
++!armMotor : not state(Mode,_,"True")
+	<-	arm_motors(True);
+			.wait(state(Mode,_,"True"), 1000).
+
++!armMotor.
+
+-!armMotor <- !armMotor.
 
 +!takeOff(Alt)
 	<-	takeoff(Alt);
