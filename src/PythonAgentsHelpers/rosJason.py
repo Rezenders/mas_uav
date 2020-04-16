@@ -29,7 +29,8 @@ class RosJason:
         self.jason_perceptions_sub = rospy.Subscriber(
             '/jason/percepts',
             jason_msgs.msg.Perception,
-            self.perception
+            self.perception,
+            queue_size=10
         )
 
         self.jason_send_msg_pub = rospy.Publisher(
