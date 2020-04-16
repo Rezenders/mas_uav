@@ -15,35 +15,38 @@ class AgArch:
         self.msgId = 0
         self.my_name = my_name
 
+        node_namespace = rospy.get_namespace()
         self.jason_actions_status_sub = rospy.Subscriber(
-            '/jason/actions_status',
+            node_namespace + 'jason/actions_status',
             jason_msgs.msg.ActionStatus,
             self.action_status)
 
         self.jason_actions_pub = rospy.Publisher(
-            '/jason/actions',
+            node_namespace + 'jason/actions',
             jason_msgs.msg.Action,
             queue_size=1,
             latch=False)
 
         self.jason_perceptions_sub = rospy.Subscriber(
-            '/jason/percepts',
+            node_namespace + 'jason/percepts',
             jason_msgs.msg.Perception,
             self.perception,
             queue_size=10
         )
 
         self.jason_send_msg_pub = rospy.Publisher(
-            '/jason/send_msg',
+            node_namespace + 'jason/send_msg',
             jason_msgs.msg.Message,
             queue_size=1,
             latch=False)
 
         self.jason_receive_msg_sub = rospy.Subscriber(
-            '/jason/receive_msg',
+            node_namespace + 'jason/receive_msg',
             jason_msgs.msg.Message,
             self.receive_msg
         )
+
+        rospy.set_param(rospy.get_namespace()+'jason/agent_name', self.my_name)
 
     def act(self, action_name, args):
         action = jason_msgs.msg.Action()
