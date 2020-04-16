@@ -62,7 +62,7 @@ def armMotor(agArch):
 
 def main():
     print("Starting python Agent node.")
-    rospy.init_node('Agent', log_level=rospy.INFO)
+    rospy.init_node('python_agent', log_level=rospy.INFO)
     signal.signal(signal.SIGINT, signal.SIG_DFL)
 
     my_name = 'uav'
