@@ -7,6 +7,7 @@ class RosJason:
     def __init__(self, my_name):
         self.action_event = Event()
         self.perception_event = Event()
+        self.perception_lock = RLock()
         self.message_event = Event()
         self.message_lock = RLock()
         self.perceptions = dict()
@@ -56,7 +57,9 @@ class RosJason:
         self.action_event.set()
 
     def perception(self, msg):
+        self.perception_lock.acquire()
         self.perceptions[msg.perception_name] = msg.parameters
+        self.perception_lock.release()
         self.perception_event.set()
 
 
