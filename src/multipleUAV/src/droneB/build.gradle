@@ -1,5 +1,5 @@
 /*
-   Project uav_agents
+   Project droneB
 
    Gradle build file for Jason Application
    July 17, 2019 - 13:34:33
@@ -31,9 +31,9 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.jason-lang',     name: 'jason' ,   version: '2.4'
-    compile group: 'org.jason-lang',     name: 'jasonros' ,   version: '1.4'
-    compile group: 'org.jason-lang',     name: 'jasonros_msgs' ,   version: '1.4'
+  compile group: 'org.jason-lang',     name: 'jason' ,   version: '2.5-SNAPSHOT'
+  compile group: 'org.jason-lang',     name: 'jasonros' ,   version: '1.7'
+  compile group: 'org.jason-lang',     name: 'jasonros_msgs' ,   version: '1.7'
 }
 
 sourceSets {
@@ -50,7 +50,7 @@ sourceSets {
 task run (type: JavaExec, dependsOn: 'classes') {
     description 'runs the application'
     main = 'jason.infra.centralised.RunCentralisedMAS'
-    args 'uav_agents.mas2j'
+    args 'droneB.mas2j'
     classpath sourceSets.main.runtimeClasspath
 }
 

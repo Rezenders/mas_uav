@@ -10,9 +10,9 @@
     July 17, 2019 - 13:34:33
 */
 
-MAS uav_agents {
+MAS droneA {
 
     infrastructure: Centralised
 
-    agents: droneB agentArchClass jasonros.RosArch;
+    agents: droneA agentArchClass jasonros.RosArch;
 }
