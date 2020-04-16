@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mas_uav</name>
+  <version>0.0.0</version>
+  <description>The mas_uav package</description>
+
+  <maintainer email="gustavorezendesilva@hotmail.com">Gustavo R. Silva</maintainer>
+
+  <license>GPLv3</license>
+
+  <url type="website">https://github.com/Rezenders/mas_uav</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>jason_hw_bridge</build_depend>
+  <build_depend>jason_msgs</build_depend>
+  <build_depend>mavros</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>jason_hw_bridge</build_export_depend>
+  <build_export_depend>jason_msgs</build_export_depend>
+  <build_export_depend>mavros</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>jason_hw_bridge</exec_depend>
+  <exec_depend>jason_msgs</exec_depend>
+  <exec_depend>mavros</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

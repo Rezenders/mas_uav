@@ -1,0 +1,15 @@
+<launch>
+  <arg name="fcu_url" default="udp://:14551@:14555"/>
+
+  <include file="$(find mavros)/launch/apm.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/>
+  </include>
+
+  <node name="jason_hw_bridge" pkg="jason_hw_bridge" type="hw_bridge.py"
+    args="-a $(find mas_uav)/src/singleUAV/config/actions_manifest
+    -p $(find mas_uav)/src/singleUAV/config/perceptions_manifest"/>
+
+  <node name="jason_agent" pkg="jason_hw_bridge" type="gradle_starter.sh"
+    args="$(find mas_uav)/src/singleUAV/src/uav_agents/build.gradle"/>
+
+</launch>

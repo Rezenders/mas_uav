@@ -3,6 +3,7 @@ import rospy
 import jason_msgs.msg
 import time
 from rosJason import *
+import signal
 
 my_name = 'uav'
 rosj = RosJason(my_name)
@@ -33,12 +34,43 @@ def rtl():
         rosj.perception_event.clear()
         rosj.perception_event.wait()
 
+def waitOnline():
+    while 'state' not in rosj.perceptions:
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
+
+    while rosj.perceptions['state'][1] == 'False':
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
+
+def setModeGuided():
+    while 'state' not in rosj.perceptions:
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
+
+    while rosj.perceptions['state'][2] == 'False':
+        rosj.act("set_mode", ["GUIDED"])
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
+
+def armMotor():
+    while 'state' not in rosj.perceptions:
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
+
+    while rosj.perceptions['state'][3] == 'False':
+        rosj.act("arm_motors", ["True"])
+        rosj.perception_event.clear()
+        rosj.perception_event.wait()
+
 def main():
     print("Starting python Agent node.")
     rospy.init_node('Agent')
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
 
-    rosj.act("set_mode", ["GUIDED"])
-    rosj.act("arm_motors", ["True"])
+    waitOnline()
+    setModeGuided()
+    armMotor()
 
     takeOff(5)
     goToPos(-27.603683, -48.518052, 40)
