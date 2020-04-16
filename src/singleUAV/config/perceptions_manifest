@@ -1,8 +1,11 @@
+[DEFAULT]
+rate = 30
+
 [state]
 name = /mavros/state
 msg_type = State
 dependencies = mavros_msgs.msg
-args = mode, connected, guided, armed
+args = mode, connected, armed
 buf = update
 
 [altitude]
