@@ -1,0 +1,6 @@
+MAS scout {
+
+    infrastructure: Centralised
+
+    agents: scout agentArchClass jasonros.RosArch;
+}
