@@ -2,8 +2,9 @@ cmake_minimum_required(VERSION 2.8.3)
 project(mas_uav)
 
 find_package(catkin REQUIRED COMPONENTS
-  jason_hw_bridge
-  jason_msgs
+  jason_ros
+  jason_ros_msgs
+  jason_ros_comm
   mavros
   rospy
   std_msgs

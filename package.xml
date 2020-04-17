@@ -11,18 +11,21 @@
   <url type="website">https://github.com/Rezenders/mas_uav</url>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>jason_hw_bridge</build_depend>
-  <build_depend>jason_msgs</build_depend>
+  <build_depend>jason_ros</build_depend>
+  <build_depend>jason_ros_msgs</build_depend>
+  <build_depend>jason_ros_comm</build_depend>
   <build_depend>mavros</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>std_msgs</build_depend>
-  <build_export_depend>jason_hw_bridge</build_export_depend>
-  <build_export_depend>jason_msgs</build_export_depend>
+  <build_export_depend>jason_ros</build_export_depend>
+  <build_export_depend>jason_ros_msgs</build_export_depend>
+  <build_export_depend>jason_ros_comm</build_export_depend>
   <build_export_depend>mavros</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
-  <exec_depend>jason_hw_bridge</exec_depend>
-  <exec_depend>jason_msgs</exec_depend>
+  <exec_depend>jason_ros</exec_depend>
+  <exec_depend>jason_ros_msgs</exec_depend>
+  <exec_depend>jason_ros_comm</exec_depend>
   <exec_depend>mavros</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
