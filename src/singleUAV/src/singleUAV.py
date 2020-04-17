@@ -1,6 +1,5 @@
 #!/usr/bin/env python2
 import rospy
-import jason_msgs.msg
 import time
 from pythonAgArch.pythonAgArch import *
 import signal

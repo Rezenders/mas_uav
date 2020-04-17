@@ -1,5 +1,5 @@
 import rospy
-import jason_msgs.msg
+import jason_ros_msgs.msg
 from threading import Event
 from threading import RLock
 
@@ -18,38 +18,38 @@ class AgArch:
         node_namespace = rospy.get_namespace()
         self.jason_actions_status_sub = rospy.Subscriber(
             node_namespace + 'jason/actions_status',
-            jason_msgs.msg.ActionStatus,
+            jason_ros_msgs.msg.ActionStatus,
             self.action_status)
 
         self.jason_actions_pub = rospy.Publisher(
             node_namespace + 'jason/actions',
-            jason_msgs.msg.Action,
+            jason_ros_msgs.msg.Action,
             queue_size=1,
             latch=False)
 
         self.jason_perceptions_sub = rospy.Subscriber(
             node_namespace + 'jason/percepts',
-            jason_msgs.msg.Perception,
+            jason_ros_msgs.msg.Perception,
             self.perception,
             queue_size=10
         )
 
         self.jason_send_msg_pub = rospy.Publisher(
             node_namespace + 'jason/send_msg',
-            jason_msgs.msg.Message,
+            jason_ros_msgs.msg.Message,
             queue_size=1,
             latch=False)
 
         self.jason_receive_msg_sub = rospy.Subscriber(
             node_namespace + 'jason/receive_msg',
-            jason_msgs.msg.Message,
+            jason_ros_msgs.msg.Message,
             self.receive_msg
         )
 
         rospy.set_param(rospy.get_namespace()+'jason/agent_name', self.my_name)
 
     def act(self, action_name, args):
-        action = jason_msgs.msg.Action()
+        action = jason_ros_msgs.msg.Action()
         action.action_name = action_name
         action.parameters = args
 
@@ -69,7 +69,7 @@ class AgArch:
 
     def send_msg(self, msgId, receiver, itlforce, msg):
         data = "<" + str(msgId)+','+self.my_name+","+itlforce+","+receiver+","+msg + ">"
-        msg = jason_msgs.msg.Message()
+        msg = jason_ros_msgs.msg.Message()
         msg.data = data
         self.jason_send_msg_pub.publish(msg)
 
