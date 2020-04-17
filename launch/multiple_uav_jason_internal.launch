@@ -1,0 +1,66 @@
+<launch>
+  <group ns="scout">
+    <arg name="fcu_url" default="udp://:14551@:14555"/>
+
+    <include file="$(find mavros)/launch/apm.launch">
+      <arg name="fcu_url" value="$(arg fcu_url)"/>
+    </include>
+
+    <node name="jason_hw_bridge" pkg="jason_ros" type="hw_bridge.py"
+      args="-a $(find mas_uav)/config/actions_manifest
+      -p $(find mas_uav)/config/perceptions_manifest"
+      output="screen"/>
+
+    <node name="jason_agent" pkg="jason_ros" type="gradle_starter.sh"
+      args="$(find mas_uav)/src/multipleUAVNegotiating/src/scout/build.gradle">
+    </node>
+
+    <node name="jason_comm" pkg="jason_ros_comm" type="comm_udp.py">
+      <rosparam command="load" file="$(find mas_uav)/params/local_ips_multiple.yaml" />
+    </node>
+  </group>
+
+  <group ns="rescuer">
+    <arg name="fcu_url" default="udp://:14561@:14565"/>
+
+    <include file="$(find mavros)/launch/apm.launch">
+      <arg name="fcu_url" value="$(arg fcu_url)"/>
+    </include>
+
+    <node name="jason_hw_bridge" pkg="jason_ros" type="hw_bridge.py"
+      args="-a $(find mas_uav)/config/actions_manifest
+      -p $(find mas_uav)/config/perceptions_manifest"
+      output="screen"/>
+
+    <node name="jason_agent" pkg="jason_ros" type="gradle_start_new_mas2j.sh"
+      args="$(find mas_uav)/src/multipleUAVNegotiating/src/rescuer rescuer rescuer.asl">
+    </node>
+
+    <node name="jason_comm" pkg="jason_ros_comm" type="comm_udp.py" output="screen">
+      <rosparam command="load" file="$(find mas_uav)/params/local_ips_multiple.yaml" />
+    </node>
+
+  </group>
+
+  <group ns="rescuer2">
+    <arg name="fcu_url" default="udp://:14571@:14575"/>
+
+    <include file="$(find mavros)/launch/apm.launch">
+      <arg name="fcu_url" value="$(arg fcu_url)"/>
+    </include>
+
+    <node name="jason_hw_bridge" pkg="jason_ros" type="hw_bridge.py"
+      args="-a $(find mas_uav)/config/actions_manifest
+      -p $(find mas_uav)/config/perceptions_manifest"
+      output="screen"/>
+
+    <node name="jason_agent" pkg="jason_ros" type="gradle_start_new_mas2j.sh"
+      args="$(find mas_uav)/src/multipleUAVNegotiating/src/rescuer rescuer2 rescuer.asl">
+    </node>
+
+    <node name="jason_comm" pkg="jason_ros_comm" type="comm_udp.py">
+      <rosparam command="load" file="$(find mas_uav)/params/local_ips_multiple.yaml" />
+    </node>
+
+  </group>
+</launch>
