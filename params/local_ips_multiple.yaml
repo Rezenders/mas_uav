@@ -1,0 +1,3 @@
+address_scout: [127.0.0.1, 2000]
+address_rescuer: [127.0.0.1, 2001]
+address_rescuer2: [127.0.0.1, 2002]
