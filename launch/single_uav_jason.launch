@@ -5,7 +5,7 @@
     <arg name="fcu_url" value="$(arg fcu_url)"/>
   </include>
 
-  <node name="jason_hw_bridge" pkg="jason_ros" type="hw_bridge.py"
+  <node name="hw_bridge" pkg="jason_ros" type="hw_bridge.py"
     args="-a $(find mas_uav)/config/actions_manifest
     -p $(find mas_uav)/config/perceptions_manifest"/>
 

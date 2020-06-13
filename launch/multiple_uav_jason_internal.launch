@@ -6,16 +6,16 @@
       <arg name="fcu_url" value="$(arg fcu_url)"/>
     </include>
 
-    <node name="jason_hw_bridge" pkg="jason_ros" type="hw_bridge.py"
+    <node name="hw_bridge" pkg="jason_ros" type="hw_bridge.py"
       args="-a $(find mas_uav)/config/actions_manifest
       -p $(find mas_uav)/config/perceptions_manifest"
       output="screen"/>
 
     <node name="jason_agent" pkg="jason_ros" type="gradle_starter.sh"
-      args="$(find mas_uav)/src/multipleUAVNegotiating/src/scout/build.gradle">
+      args="$(find mas_uav)/src/multipleUAVNegotiating/src/scout/build.gradle" output="screen">
     </node>
 
-    <node name="jason_comm" pkg="jason_ros_comm" type="comm_udp.py">
+    <node name="comm" pkg="jason_ros_comm" type="comm_udp.py">
       <rosparam command="load" file="$(find mas_uav)/params/local_ips_multiple.yaml" />
     </node>
   </group>
@@ -33,7 +33,7 @@
       output="screen"/>
 
     <node name="jason_agent" pkg="jason_ros" type="gradle_start_new_mas2j.sh"
-      args="$(find mas_uav)/src/multipleUAVNegotiating/src/rescuer rescuer rescuer.asl">
+      args="$(find mas_uav)/src/multipleUAVNegotiating/src/rescuer rescuer rescuer.asl" output="screen">
     </node>
 
     <node name="jason_comm" pkg="jason_ros_comm" type="comm_udp.py" output="screen">
@@ -55,7 +55,7 @@
       output="screen"/>
 
     <node name="jason_agent" pkg="jason_ros" type="gradle_start_new_mas2j.sh"
-      args="$(find mas_uav)/src/multipleUAVNegotiating/src/rescuer rescuer2 rescuer.asl">
+      args="$(find mas_uav)/src/multipleUAVNegotiating/src/rescuer rescuer2 rescuer.asl" output="screen">
     </node>
 
     <node name="jason_comm" pkg="jason_ros_comm" type="comm_udp.py">
