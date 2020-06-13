@@ -9,7 +9,7 @@
 	!goToPos(-27.603683, -48.518052, 40);
 	!returnToLand.
 
-+!setMode(Mode) : not state(Mode,_,_,_)
++!setMode(Mode) : not state(Mode,_,_)
 	<- 	set_mode(Mode);
 			.wait(state(Mode,_,_), 1000).
 
