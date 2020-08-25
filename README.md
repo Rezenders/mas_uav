@@ -37,6 +37,12 @@ $ apt install gradle
 
 Also, this experiments use ardupilot SITL to simulate the UAVs so it is necessary to set it up. The instructions for installing it can be found in: https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
 
+After installing ardupilot add UFSC location into locations.txt
+
+```
+$ echo 'UFSC=-27.604033,-48.518363,21,0' >> /ardupilot/Tools/autotest/locations.txt
+```
+
 It is also possible to use gazebo with ardupilot SITL, in case you do not want to use it you can skip the following instructions.
 
 First, it is necessary to install a plugin to enable ardupilot to communicate with gazebo.
