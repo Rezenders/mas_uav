@@ -68,12 +68,12 @@ echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
 
 Set Path of Gazebo Models (Adapt the path to where to clone the repo)
 ````
-echo 'export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/models' >> ~/.bashrc
+echo 'export GAZEBO_MODEL_PATH=~/jason_ros_ws/src/ardupilot_gazebo/models' >> ~/.bashrc
 ````
 
 Set Path of Gazebo Worlds (Adapt the path to where to clone the repo)
 ````
-echo 'export GAZEBO_RESOURCE_PATH=~/ardupilot_gazebo/worlds:${GAZEBO_RESOURCE_PATH}' >> ~/.bashrc
+echo 'export GAZEBO_RESOURCE_PATH=~/jason_ros_ws/src/ardupilot_gazebo/worlds:${GAZEBO_RESOURCE_PATH}' >> ~/.bashrc
 ````
 
 ````
