@@ -182,3 +182,21 @@ You should see this as result:
  - It should be possible to run the docker-compose with balena
  - Gazebo world and models shall be improved
  - ardupilot_gazebo should be turned into a ROS package
+
+## Reference
+If you find this repository usefull and use it in your project, please consider citing it:
+
+```
+@article{silva2020embedded,
+  title={Embedded Architecture Composed of Cognitive Agents and ROS for Programming Intelligent Robots},
+  author={Silva, Gustavo R and Becker, Leandro B and H{\"u}bner, Jomi F},
+  journal={IFAC-PapersOnLine},
+  volume={53},
+  number={2},
+  pages={10000--10005},
+  year={2020},
+  publisher={Elsevier}
+}
+```
+
+[Paper link](https://www.sciencedirect.com/science/article/pii/S2405896320334819)
